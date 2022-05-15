@@ -66,6 +66,7 @@ header a {
 
 header nav {   
  margin: 20px 0;
+ color: var(--primary-color);
 } 
 
 /* li is not addressed here: */
@@ -90,8 +91,14 @@ header nav ul li a{
  
  font-size: 1.65vw;  
  margin: 0 22px 0 0;
- 
 }
+
+header nav ul li span{
+  padding: 7px 8px 0 8px;  
+  font-weight: lighter;
+  font-size: 1.65vw;  
+  margin: 0 22px 0 0;
+ }
 
 .navActive {
   color: var(--secondary-color);
