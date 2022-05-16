@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/css/main.be9b266d.css",
+    "main.js": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/js/main.7abb354a.js",
+    "static/js/787.66a0d8d8.chunk.js": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/js/787.66a0d8d8.chunk.js",
+    "static/media/hero-bg-tulips.jpg": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/media/hero-bg-tulips.38ffc23f4e3abebedd2c.jpg",
+    "static/media/5.png": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/media/5.4ecbc82d07905fb9264f.png",
+    "static/media/0.png": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/media/0.4a6ed86897f38de119c9.png",
+    "static/media/HKTranProfilePhotoSmallOpacity.jpg": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/media/HKTranProfilePhotoSmallOpacity.f691cd91f94dbae74126.jpg",
+    "static/media/3.png": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/media/3.079d98e6ba42f60432fa.png",
+    "static/media/4.png": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/media/4.b4bb0408fea63a792674.png",
+    "static/media/2.png": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/media/2.56e35bb3b5d2b4ae0960.png",
+    "index.html": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/index.html",
+    "main.be9b266d.css.map": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/css/main.be9b266d.css.map",
+    "main.7abb354a.js.map": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/js/main.7abb354a.js.map",
+    "787.66a0d8d8.chunk.js.map": "/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/static/js/787.66a0d8d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be9b266d.css",
+    "static/js/main.7abb354a.js"
+  ]
+}
