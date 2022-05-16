@@ -8,7 +8,7 @@ function Nav(props) {
     setContactSelected, contactSelected,
     resumeSelected, setResumeSelected,
     aboutMeSelected, setAboutMeSelected,
-    workSelected, setWorkSelected,
+    workSelected, setWorkSelected
    } = props;
 
   // useEffect(() => {
@@ -17,8 +17,8 @@ function Nav(props) {
 
   return (
     <header>
-       <h1>
-         Kimberly Tran
+       <h1 > 
+         Kimberly Tran 
       </h1>
       <nav>
         <ul >
@@ -48,20 +48,27 @@ function Nav(props) {
           ))} */}
 
           <li className={`${workSelected && 'navActive'}`}>
-            <span onClick={() => {setWorkSelected(true); setContactSelected(false);  setAboutMeSelected(false); setResumeSelected(false)}}>
+            <span onClick={ () => { 
+              setWorkSelected(true); 
+              setContactSelected(false);  
+              setAboutMeSelected(false); 
+              setResumeSelected(false)}}>
               Portfolio</span>
           </li>
 
           <li className={`${contactSelected && 'navActive'}`}>
             {/* <span onClick={() => setContactSelected(true)}>Contact</span> */}
-            <span onClick={() => {setContactSelected(true);  setAboutMeSelected(false);   setWorkSelected(false); setResumeSelected(false)}}>
+            <span onClick={() => {setContactSelected(true);  
+              setAboutMeSelected(false);   
+              setWorkSelected(false); 
+              setResumeSelected(false)}}>
               Contact</span>
           </li>
           <li className={`${resumeSelected && 'navActive'}`}>
             <span onClick={() => {  setResumeSelected(true);
                                     setContactSelected(false); 
-                                    setAboutMeSelected(false);
-                                    setWorkSelected(false);
+                                    setAboutMeSelected(false)
+                                    setWorkSelected(false)
                                   
               }}>
               Resume

@@ -33,6 +33,17 @@ function About() {
             </div>
         </div>
       </div>
+      <div className="step">
+         
+        <div className="step-info">
+            <div className="step-text">
+              <p> 
+                 &nbsp;
+                 &nbsp;
+            </p>           
+            </div>
+        </div>
+      </div>
    
     </section>
 

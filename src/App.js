@@ -5,6 +5,7 @@ import About from './components/About';
 import ContactForm from './components/Contact'; 
 import Resume from './components/Resume';
 import Work from './components/Work';
+import Hero from './components/Hero';
 
 function App() {
   // const [categories] = useState([
@@ -39,7 +40,8 @@ function App() {
         workSelected={workSelected}
         setWorkSelected={setWorkSelected}
       ></Nav>
-      <main>
+      <main>        
+        <Hero></Hero>
         <ContactForm></ContactForm>
       </main>
     </div>
@@ -66,6 +68,7 @@ function App() {
           setWorkSelected={setWorkSelected}>  
         </Nav>
         <main>
+          <Hero></Hero>
           <Work></Work>
         </main>
       </div>
@@ -92,6 +95,7 @@ function App() {
           setWorkSelected={setWorkSelected}>  
         </Nav>
         <main>
+          <Hero></Hero>
           <Resume></Resume>
         </main>
       </div>
@@ -110,11 +114,15 @@ function App() {
   
           resumeSelected={resumeSelected}
           setResumeSelected={setResumeSelected}
+
+          workSelected={workSelected}
+          setWorkSelected={setWorkSelected}
   
           aboutMeSelected={aboutMeSelected}
           setAboutMeSelected={setAboutMeSelected}>
         </Nav>
         <main>
+          <Hero></Hero>
           <About></About>
         </main>
       </div>
@@ -133,11 +141,15 @@ function App() {
     
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
+
+            workSelected={workSelected}
+            setWorkSelected={setWorkSelected}
     
             aboutMeSelected={"true"}
             setAboutMeSelected={setAboutMeSelected}>
           </Nav>
           <main>
+            <Hero></Hero>
             <About></About>
           </main>
         </div>

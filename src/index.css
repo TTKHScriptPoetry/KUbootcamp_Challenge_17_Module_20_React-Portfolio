@@ -10,11 +10,13 @@ any element or class selector can use them, so we use :root pseudo-class */
 :root{
  --primary-color: rgb(232, 218, 194) ; /* #f7d39e; */  /* #a0cafa; */
  --secondary-color: rgb(202, 180, 151); /* ce6f39; a34914 #cc5916 ;*/ 
- --tertiary-color:  #7a5a47;  /* 5e483b 4b230c; cc5916;  #76a384; #5d7564; #39a6b2; */
- --divider-color: rgb(154, 94, 56);
+ --tertiary-color: #435e57 ; /* #7a5a47;*/  /* 5e483b 4b230c; cc5916;  #76a384; #5d7564; #39a6b2; */
+ --divider-color: #413c58; /*rgb(154, 94, 56);*/
+ --back-up-font-shadow:  rgb(228, 205, 185);
+ --emphasis-list-item-color: rgb(85, 80, 108);
  --distance-from-divider: 35px;
  --likable-font-family: Helvetica, Arial, sans-serif; /* "Microsoft YaHei New", "Microsoft Yahei" ; */
- --back-up-font-shadow:  rgb(228, 205, 185);
+
  --emphasis-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -69,7 +71,7 @@ header a {
 header nav {   
  margin: 20px 0;
  font-family: var(--emphasis-font-family);
- text-shadow: -1px 1px 1px var(--secondary-color);
+ text-shadow: -2px 2px 1px var(--secondary-color);
 } 
 
 /* li is not addressed here: */
@@ -105,6 +107,14 @@ header nav ul li span{
   margin: 0 22px 0 0;
   
  }
+
+.round-25-80 {
+  border-radius: 25px 80px;
+}
+
+.round-80-25 {
+  border-radius: 80px 25px;
+}
 
 .navActive {
   color: var(--secondary-color);
@@ -160,7 +170,7 @@ section{
 }
 
 .hero {
- /* background-image: url("../images/hero-bg-tulips.jpg"); */
+ /* background-image: url("images/hero-bg-tulips.jpg"); */
  background-size: cover; /* tells the browser to make sure the image always covers the entire container, image might not be whole*/
  background-position: center; /* affect the bg image position*/    
  background-attachment: fixed; /* places the image relative to the viewport instead of the element. */
@@ -253,9 +263,24 @@ section{
 flex: 2 80%; /* At a 2-to-1 ratio, it will receive two more units of unused space than a sibling with a flex-grow value of 1.*/
 display: flex;
 flex-wrap: wrap;
-margin: 0 auto 0 auto;
+margin: 0 auto 0 0;
 padding:0;
 }
+
+.step-img h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--tertiary-color);
+ 
+ }
+
+ .step-img li {
+  font-size: 22px;
+  line-height: 0.5;
+  color: var(--emphasis-list-item-color);
+  margin: 20px 0 10px 40px;
+ 
+ }
 
 /*  flex layout implementation to render About Me content */
 .step-text{
@@ -277,10 +302,11 @@ padding:0;
 /* .step-text h4 {
  font-size: 26px;
  line-height: 1.5;
- color: var(--secondary-color);
+ color: var(--tertiary-color);
 
-}
-.step-text a {
+} */
+
+/* .step-text a {
  font-size: 28px;
  line-height: 1.5;
  color: var(--secondary-color);
