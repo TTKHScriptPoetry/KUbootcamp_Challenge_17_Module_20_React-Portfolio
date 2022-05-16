@@ -274,13 +274,13 @@ padding:0;
  
  }
 
- .step-img li {
+ /* .step-img li {
   font-size: 22px;
   line-height: 0.5;
   color: var(--emphasis-list-item-color);
   margin: 20px 0 10px 40px;
  
- }
+ } */
 
 /*  flex layout implementation to render About Me content */
 .step-text{
