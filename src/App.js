@@ -134,7 +134,7 @@ function App() {
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
     
-            aboutMeSelected={aboutMeSelected}
+            aboutMeSelected={"true"}
             setAboutMeSelected={setAboutMeSelected}>
           </Nav>
           <main>

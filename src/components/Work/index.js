@@ -39,23 +39,48 @@ const Work = () => {
   // const currentPhotos = photos.filter((photo) => photo.category === 'portfolio');
   const currentPhotos = photos;
 
+
   return (
-    <div>
-      <div className="flex-row">
-        {currentPhotos.map((image, i) => ( 
-               
-          <img
-            
-            src={require(`../../assets/images/small/portfolio/${i}.png`)}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            key={image.name}
-          /> 
-
-
-        ))}
+    <section id="my-work-1" className="steps">
+      <div className="component">
+        <h2> Portfolio </h2>
       </div>
-    </div>
+      <div className="step">
+        <div className="step-info">
+          <div className="gallery">
+            <div className="step-img">
+              <span>
+                {currentPhotos.map((image, i) => ( 
+                  <img
+                    src={require(`../../assets/images/small/portfolio/${i}.png`)}
+                    alt={image.name}
+                    className="img-thumbnail mx-1"
+                    key={image.name}
+                  /> 
+                ))}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+//     <div>
+//       <div className="flex-row">
+//         {currentPhotos.map((image, i) => ( 
+//                
+//           <img
+//             
+//             src={require(`../../assets/images/small/portfolio/${i}.png`)}
+//             alt={image.name}
+//             className="img-thumbnail mx-1"
+//             key={image.name}
+//           /> 
+// 
+// 
+//         ))}
+//       </div>
+//     </div>
   )
 };
  
