@@ -1,20 +1,19 @@
-import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from "react";
+// import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
-  const { categories = [], 
-    setCurrentCategory, currentCategory,
+  const { 
+    // categories = [], 
+    // setCurrentCategory, currentCategory,
     setContactSelected, contactSelected,
+    resumeSelected, setResumeSelected,
+    aboutMeSelected, setAboutMeSelected,
+    workSelected, setWorkSelected,
    } = props;
 
   // useEffect(() => {
   //   document.title = capitalizeFirstLetter(currentCategory.name);
   // }, [currentCategory]);
-
-  // const handleClick = (item) => {    
-  //   alert(item);
-  //   return item;
-  // };
 
   return (
     <header>
@@ -23,28 +22,51 @@ function Nav(props) {
       </h1>
       <nav>
         <ul >
-          <li>
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+          
+          <li className={`${aboutMeSelected && 'navActive'}`}>
+            <span onClick={() => { setContactSelected(false); 
+                                                setResumeSelected(false);
+                                                setAboutMeSelected(true);
+                                                setWorkSelected(false)
+              }}>
               About Me
-            </a>
+            </span>
           </li>
-          <li>
-            <a data-testid="resume" href="#resume"  onClick={() => setContactSelected(false)}>
-              Resume
-            </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
-              <li className={`mx-1 ${currentCategory.name === category.name && !contactSelected && 'navActive'}`} key={category.name}>
+        
+          {/* {categories.map((category) => (
+              <li className={`${currentCategory.name === category.name && !contactSelected && !resumeSelected && !aboutMeSelected && 'navActive'}`} key={category.name}>
                 <span onClick={() => { setCurrentCategory(category);
                                       setContactSelected(false);
-                    }}> 
+                                      setAboutMeSelected(false);
+                                      setResumeSelected(false);
+                                      setWorkSelected(false);
+
+                  }}> 
                   {capitalizeFirstLetter(category.name)} 
                 </span>
             </li>
-          ))}
+          ))} */}
+
+          <li className={`${workSelected && 'navActive'}`}>
+            <span onClick={() => {setWorkSelected(true); setContactSelected(false);  setAboutMeSelected(false); setResumeSelected(false)}}>
+              Work</span>
+          </li>
+
+          <li className={`${contactSelected && 'navActive'}`}>
+            {/* <span onClick={() => setContactSelected(true)}>Contact</span> */}
+            <span onClick={() => {setContactSelected(true);  setAboutMeSelected(false);   setWorkSelected(false); setResumeSelected(false)}}>
+              Contact</span>
+          </li>
+          <li className={`${resumeSelected && 'navActive'}`}>
+            <span onClick={() => {  setResumeSelected(true);
+                                    setContactSelected(false); 
+                                    setAboutMeSelected(false);
+                                    setWorkSelected(false);
+                                  
+              }}>
+              Resume
+            </span>
+          </li>
         </ul>
       </nav>
     </header>
