@@ -36,6 +36,11 @@ const PhotoList = (props) => {
       name: 'Group Project 2',
       category: 'adventure',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+    },
+    {
+      name: 'Group Project 3',
+      category: 'adventure',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     }
   ]);
 
