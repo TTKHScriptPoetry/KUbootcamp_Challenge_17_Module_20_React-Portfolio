@@ -1,56 +1,67 @@
 import React from 'react'
 
 function Resume() {
-
- 
- 
-
   return (
-
-    <section className="steps" id="about-me-1">
-      <div className="component">
-        <h2> Resume </h2>
-        <h4><a href={require(`../../assets/docs/SoftwareDeveloper_KimberlyTran_Resume.pdf`)} >My Resume</a></h4>
-      </div>
-      <div className="step">
-        <div className="step-info">
-        <div className="gallery">
-          <div className="step-img">
-              {/* <a href={require(`../../assets/docs/SoftwareDeveloper_KimberlyTran_Resume.pdf`)} >My Resume</a> */}
-              <h4> Front-end Proficiencies </h4>
-              <ul>
-                <li> HTML
-                </li> 
-                <li> CSS
-                </li>
-                <li> Javascript
-                </li>
-                <li> Resonsive design
-                </li> 
-                <li> React
-                </li> 
-              </ul>
-
-              <h4> Back-end Proficiencies </h4>
-              <ul>
-                <li> APIs
-                </li> 
-                <li> Node
-                </li>
-                <li> Express
-                </li>
-                <li> MySQL, Sequelize
-                </li> 
-                <li> MongoDB, Mongoose
-                </li> 
-              </ul>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className='flex-row justify-space-between'> 
     
-  ) // end of return
+      <div className={`col-12 col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}>
+        <h2>Resume</h2>
+        <span className="pill mb-2"><a title='Click to Download' href={require(`../../assets/docs/SoftwareDeveloper_KimberlyTran_Resume.pdf`)} >My Resume</a></span>
+      </div>
+
+      <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-1 mt-4`}>
+        <h4> Front-end Proficiencies</h4>
+        <p className="pill mb-1" > HTML </p>
+        <p className="pill mb-1" > CSS | Bootstrap  </p>
+        <p className="pill mb-1" > Javascript </p>
+        <p className="pill mb-1" > jQuery  </p>
+        <p className="pill mb-1" > React  </p>
+
+      </div>
+      <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-3`}>
+        &nbsp;
+      </div>
+
+      <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-4 mt-2`}>
+        <h4> Back-end Proficiencies</h4>
+        <p className="pill mb-1" > Node.js | Express </p>
+        <p className="pill mb-1" > APIs Consumed | Create | Test  </p>
+        <p className="pill mb-1" > MySQL | Sequelize </p>
+        <p className="pill mb-1" > NoSQL | MongoDB | Mongoose</p>
+        <p className="pill mb-1" > MongoDB |  ORM Apollo GraphQL  </p>
+        <p className="pill mb-1" > MSSQL | Transact-SQL | Store-procedure  </p>
+        <p className="pill mb-1" > VB | C#, ADO.NET | ORM Entity Framework  </p>
+      </div>
+      <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-3`}>
+        &nbsp;
+      </div>
+
+      {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-4 mt-2`}>
+        <h4> Back-end Proficiencies</h4>
+        <p className="pill mb-1" > Node | Express </p>
+        <p className="pill mb-1" > APIs Consumed | Create | Test  </p>
+        <p className="pill mb-1" > MySQL, Sequelize </p>
+        <p className="pill mb-1" > NoSQL| MongoDB | Mongoose</p>
+        <p className="pill mb-1" > MongoDB, ORM Apollo GraphQL  </p>
+        <p className="pill mb-1" > VB | C#, ADO.NET | ORM Entity Framework  </p>
+      </div> */}
+      <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-3`}>
+        &nbsp;
+      </div>
+      
+        {/* ------------- Other Possibilities -------------------------- */}
+        {/* <div className={`col-12 col-lg-8 col-md-9 col-sm-8 mb-3`}>
+        </div>
+        <div className="col-12 col-lg-4 col-md-3 col-sm-4 mb-3">Please register to place orders</div>   */}
+
+        {/* <div className={`col-12 col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}>
+          <h4> Heading</h4>
+        </div> */}
+
+         {/* -------------- End of small module tests ----------------------------------------- */}
+    </div>     
+
+  ) 
 }
 
 export default Resume

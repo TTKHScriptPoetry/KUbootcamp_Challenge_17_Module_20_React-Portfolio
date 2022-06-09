@@ -3,6 +3,8 @@ import React from "react";
 
 function Nav(props) {
   const { 
+    // categories = [], 
+    // setCurrentCategory, currentCategory,
     setContactSelected, contactSelected,
     resumeSelected, setResumeSelected,
     aboutMeSelected, setAboutMeSelected,
@@ -14,39 +16,52 @@ function Nav(props) {
   // }, [currentCategory]);
 
   return (
-    <header className="bg-secondary mb-0 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <h1 > 
-         Kim Huong
-        </h1>
-        <nav className="text-center">
-            <span className={`${aboutMeSelected && 'navActive'}`} onClick={() => { setContactSelected(false); 
+    <header>
+       <h1 > 
+         Kimberly Tran 
+      </h1>
+      <nav>
+        <ul >
+          
+          <li className={`${aboutMeSelected && 'navActive'}`}>
+            <span onClick={() => { setContactSelected(false); 
                                                 setResumeSelected(false);
                                                 setAboutMeSelected(true);
                                                 setWorkSelected(false)
               }}>
-              About Me</span>
-            <span className={`${workSelected && 'navActive'}`} onClick={ () => { 
+              About Me
+            </span>
+          </li>
+        
+          <li className={`${workSelected && 'navActive'}`}>
+            <span onClick={ () => { 
               setWorkSelected(true); 
               setContactSelected(false);  
               setAboutMeSelected(false); 
               setResumeSelected(false)}}>
               Portfolio</span>
-            <span className={`${contactSelected && 'navActive'}`} onClick={() => {setContactSelected(true);  
+          </li>
+
+          <li className={`${contactSelected && 'navActive'}`}>
+            {/* <span onClick={() => setContactSelected(true)}>Contact</span> */}
+            <span onClick={() => {setContactSelected(true);  
               setAboutMeSelected(false);   
               setWorkSelected(false); 
               setResumeSelected(false)}}>
               Contact</span>
-            <span className={`${resumeSelected && 'navActive'}`} onClick={() => {  setResumeSelected(true);
+          </li>
+          <li className={`${resumeSelected && 'navActive'}`}>
+            <span onClick={() => {  setResumeSelected(true);
                                     setContactSelected(false); 
                                     setAboutMeSelected(false)
                                     setWorkSelected(false)
                                   
               }}>
-              Resume</span>
-            
-        </nav>
-      </div>
+              Resume
+            </span>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

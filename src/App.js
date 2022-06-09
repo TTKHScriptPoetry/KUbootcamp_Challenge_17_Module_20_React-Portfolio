@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav/';
+import Nav from './components/Nav';
 import About from './components/About';
 // import Portfolio from './components/Portfolio';
-import ContactForm from './components/Contact'; 
+import ContactFrom from './components/Contact'; 
 import Resume from './components/Resume';
 import Work from './components/Work';
 import Hero from './components/Hero';
+
+// import Header from './components/Header';
+import Footer from './components/Footer';
+import SingularShow from './components/SingularShow';
+import CompositeShowcase from './components/CompositeShowcase';
 
 function App() {
   // const [categories] = useState([
@@ -22,39 +27,8 @@ function App() {
   
   if(contactSelected) {
     return(
-      <div>
-      <Nav
-        // categories={categories}
-        // setCurrentCategory={setCurrentCategory}
-        // currentCategory={currentCategory}
-
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-
-        resumeSelected={resumeSelected}
-        setResumeSelected={setResumeSelected}
-
-        aboutMeSelected={aboutMeSelected}
-        setAboutMeSelected={setAboutMeSelected}
-
-        workSelected={workSelected}
-        setWorkSelected={setWorkSelected}
-      ></Nav>
-      <main>        
-        <Hero></Hero>
-        <ContactForm></ContactForm>
-      </main>
-    </div>
-    );
-  } 
-  else if (workSelected){
-    return( 
-      <div>
+      <div className="min-100-vh"> 
         <Nav
-          // categories={categories}
-          // setCurrentCategory={setCurrentCategory}
-          // currentCategory={currentCategory}
-
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
 
@@ -65,72 +39,102 @@ function App() {
           setAboutMeSelected={setAboutMeSelected}
 
           workSelected={workSelected}
-          setWorkSelected={setWorkSelected}>  
+          setWorkSelected={setWorkSelected}
+        ></Nav>
+     
+        <Hero></Hero>
+        <main className="container">        
+          
+          <ContactFrom></ContactFrom>
+        </main>
+        <Footer></Footer>  
+      </div>
+    );
+  } 
+  else if (workSelected){
+    return( 
+      <div className="flex-column justify-flex-start min-100-vh" >    
+        <Nav
+            // categories={categories}
+            // setCurrentCategory={setCurrentCategory}
+            // currentCategory={currentCategory}
+
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
+
+            resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected}
+
+            aboutMeSelected={aboutMeSelected}
+            setAboutMeSelected={setAboutMeSelected}
+
+            workSelected={workSelected}
+            setWorkSelected={setWorkSelected}>  
         </Nav>
-        <main>
-          <Hero></Hero>
+        <Hero></Hero>
+        <main className="container" >
           <Work></Work>
         </main>
+        <Footer></Footer>
       </div>
     );
   } 
   else if (resumeSelected){
     return( 
-      <div>
-        <Nav
-          // categories={categories}
-          // setCurrentCategory={setCurrentCategory}
-          // currentCategory={currentCategory}
+      <div className="flex-column justify-flex-start min-100-vh" > 
+          <Nav
+            // categories={categories}
+            // setCurrentCategory={setCurrentCategory}
+            // currentCategory={currentCategory}
 
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
 
-          resumeSelected={resumeSelected}
-          setResumeSelected={setResumeSelected}
+            resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected}
 
-          aboutMeSelected={aboutMeSelected}
-          setAboutMeSelected={setAboutMeSelected}
+            aboutMeSelected={aboutMeSelected}
+            setAboutMeSelected={setAboutMeSelected}
 
-          workSelected={workSelected}
-          setWorkSelected={setWorkSelected}>  
-        </Nav>
-        <main>
+            workSelected={workSelected}
+            setWorkSelected={setWorkSelected}>  
+          </Nav>
           <Hero></Hero>
+        <main className="container" >
+         
           <Resume></Resume>
         </main>
+        <Footer></Footer>
       </div>
     );
   } 
   else if (aboutMeSelected){
     return( 
-      <div>
-        <Nav
-          // categories={categories}
-          // setCurrentCategory={setCurrentCategory}
-          // currentCategory={currentCategory}
-  
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
-  
-          resumeSelected={resumeSelected}
-          setResumeSelected={setResumeSelected}
+      <div className="flex-column justify-flex-start min-100-vh">        
+          <Nav
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
+    
+            resumeSelected={resumeSelected}
+            setResumeSelected={setResumeSelected}
 
-          workSelected={workSelected}
-          setWorkSelected={setWorkSelected}
-  
-          aboutMeSelected={aboutMeSelected}
-          setAboutMeSelected={setAboutMeSelected}>
-        </Nav>
-        <main>
-          <Hero></Hero>
+            workSelected={workSelected}
+            setWorkSelected={setWorkSelected}
+    
+            aboutMeSelected={aboutMeSelected}
+            setAboutMeSelected={setAboutMeSelected}>
+          </Nav>     
+          <Hero></Hero>          
+        <main className="container">
           <About></About>
         </main>
+        <Footer></Footer>       
       </div>
     );
   }
   else{
       return( 
-        <div>
+        <div className="flex-column justify-flex-start min-100-vh">
           <Nav
             // categories={categories}
             // setCurrentCategory={setCurrentCategory}
@@ -148,10 +152,11 @@ function App() {
             aboutMeSelected={"true"}
             setAboutMeSelected={setAboutMeSelected}>
           </Nav>
-          <main>
-            <Hero></Hero>
-            <About></About>
+          <Hero></Hero>
+          <main className='container' >
+            <CompositeShowcase></CompositeShowcase>
           </main>
+          <Footer></Footer>
         </div>
       );
     }
@@ -205,7 +210,7 @@ export default App;
 // //         setWorkSelected={setWorkSelected}
 // //       ></Nav>
 // //       <main>
-// //         <ContactForm></ContactForm>
+// //         <ContactFrom></ContactFrom>
 // //       </main>
 // //     </div>
 // //     );
