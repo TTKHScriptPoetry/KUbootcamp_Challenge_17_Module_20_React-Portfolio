@@ -4,18 +4,11 @@
   box-sizing: border-box;
 }
 
-
-
 :root{
   --primary: rgba(68, 93, 143, 0.560);
   /* --primary: rgba(70, 93, 143, 0.600); very good */
-  /* --primary: rgb(252, 238, 216) ; */
-  /* --secondary: rgba(222, 208, 184, 0.314); */
   --secondary: rgba(164, 200, 245, 0.900);
-  /* --secondary: rgba(180, 142, 114, 0.800); */
   --tertiary:  rgb(124, 151, 219);
-  /* --tertiary:  rgba(122, 90, 71, 0.852);  */
-  /* --divider: rgba(65, 60, 88, 0.856);  */
   --quatrinary:  rgb(90, 103, 173);
   --emphasis-list-item-color: rgba(88, 113, 163, 0.960);
   --super-light  : rgba(174, 210, 255, 0.900);
@@ -24,19 +17,9 @@
   /* --light: rgba(222, 208, 184, 0.221); */
   --dark: rgba(70, 83, 143, 0.900);
   /* --dark: rgba(121, 81, 76, 0.956); */
-  --white: #ffffff;
-
- /* --secondary: rgb(123, 156, 221);  
- --tertiary: #435e57 ; 
- --quatrinary: rgb(233, 223, 223);
-
- --light: rgba(254, 240, 238, 0.914);
- --dark: rgb(76, 95, 134);   
-
- --tertiary: #435e57 ; 
- --divider-color: rgb(154, 94, 56);
- --back-up-font-shadow:  rgb(228, 205, 185);
- */
+  --white: rgb(255, 255, 255);
+  --emphasis-catchy: rgb(229, 122, 131);
+ 
  --distance-from-divider: 35px;
  --likable-font-family: Helvetica, Arial, sans-serif;  
 
@@ -74,19 +57,6 @@ body {
   background: -webkit-linear-gradient(var(--emphasis-list-item-color), var(--primary)); 
 }
 
-
-
-/* #hover-content {
-  display:none;
-}
-
-#hover-me:hover #hover-content {
-  display:block;
-}
-#hover-me:hover {
-  opacity: 0.8;
-} */
-
 header{
   border-bottom: 1px solid var(--emphasis-list-item-color);
   position: sticky;
@@ -121,13 +91,32 @@ footer a:hover {
 
 main a {
   color: var(--dark);
+  font-size: 1.1rem !important;
   text-decoration: none;
 }
 
 main a:hover{
-  color: var(--emphasis-list-item-color);
+  color: var(--white);
+  font-size: 1.1rem !important;
+  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
   text-decoration: none;
   font-weight: 500;
+}
+
+main .about-me {
+  font-size: 0.7rem !important;
+}
+
+
+main h2{  
+  text-shadow: 1px 1px 1px var(--white) !important;
+  letter-spacing: 2px !important;
+}
+
+main h4{
+  font-size: 1.4rem !important;
+  color: var(--primary);
+  text-shadow: 1px 1px 1px var(--white) !important;
 }
 
 textarea:focus, input:focus{
@@ -169,12 +158,12 @@ h6 {
 }
 
 h1 {
-  font-size: 2.45rem;
+  font-size: 2.55rem;
   letter-spacing: 1px !important;
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -198,22 +187,6 @@ p {
   margin-top: 0;
 }
 
-a {
-  color: var(--dark);
-  text-decoration: none;
-}
-
-a:hover{
-  color: var(--emphasis-catchy);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-
-a:visited {
-  color: inherit;
-}
-
 nav {
   width: 100%;
   justify-content: center;
@@ -227,20 +200,22 @@ nav a, span {
   margin: 0 15px;
   transition: all 0.2s;
 
-  color: var(--white);
-  font-size: 1.4rem !important;
+  color: var(--dark) !important;
+  text-shadow: 1px 1px var(--primary) !important;
+  font-size: 1.4rem !important; 
   font-family: var(--casual-technical-font) !important;
   font-weight: 700;
-  text-shadow: 1px 1px 1px var(--quatrinary);
+  letter-spacing: 1px;
   
 }
 
 nav a:hover, span:hover{
-  color: var(--emphasis-list-item-color) !important;
+  color: var(--white)!important;
+  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
   font-size: 1.4rem !important;
   font-family: var(--casual-technical-font) !important;
   font-weight: 700;
-  text-shadow: 1px 1px 1px var(--super-light) !important;
+  letter-spacing: 1px;
   
 }
 
@@ -264,12 +239,12 @@ nav a:hover, span:hover{
   outline: none;
   border-radius: 3px;
   border:  1px solid var(--quatrinary) !important;
-
   color: var(--dark);
   background-color: var(--secondary);
   text-decoration: none;
   transition: all 0.5s;  
-}
+
+} 
 
 .btn{
   font-family: var(--designer-font-primary);
@@ -430,36 +405,11 @@ input[type='checkbox']:checked + label:after {
   width: 92%;
 }
 
-.container h2{
-  color: var(--emphasis-catchy);
-  letter-spacing: 3px !important;
-}
-
 .container img{
-  opacity: 90%;
+  opacity: 95%;
   margin: 15px 30px 0 0;  
 } 
 
-.container a{
-  color: var(--quatrinary);
-  font-size: 1.1rem !important;
-  font-family: var(--casual-technical-font) !important;
-  font-weight: 700;
-  text-shadow: none !important;
-}
-
-.container a:hover{
-  color: var(--white);
-  font-size: 1.1rem !important;
-  font-family: var(--casual-technical-font) !important;
-  font-weight: 700;
-  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
-}
-
-.container p{
-  font-family: var(--paragraph-coding-style);
-  font-size: 0.9rem !important;
-}
 .worksample-photo {
   /* width: 513px;
   height: 242px; */
@@ -1488,10 +1438,12 @@ input[type='checkbox']:checked + label:after {
 
 .navActive { 
   cursor: auto;
-  color: var(--dark) !important;
+  
   font-family: var(--casual-technical-font) !important;
   font-weight: 700;
-  text-shadow: 1px 1px 1px var(--super-light) !important;
+
+  color: var(--white) !important;
+  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
   
 }
 
@@ -1514,18 +1466,23 @@ input[type='checkbox']:checked + label:after {
 }
 
 #hover-me:hover #hover-content a {
-  color: var(--divider);
+  color: var(--emphasis-catchy);
   text-shadow: 1px 1px 1px var(--white);
+  font-family: var(--casual-technical-font);
+  font-size: 1.10rem !important;
   transition: all 0.6s;
 }
 
 #hover-me:hover #hover-content a:hover {
   color: var(--white);
-  text-shadow: 1px 1px 1px var(--divider);
+  text-shadow: 1px 1px 1px var(--emphasis-list-item-color);
+  font-family: var(--casual-technical-font);
+  font-size: 1.10rem !important;
 }
 
+/* To dim the github icon when hovering */
 #hover-me:hover #hover-content img:hover {
-  opacity: 1.65;  
+  opacity: 0.75;  
 }
 
 #hover-me:hover #be-gone {
@@ -1533,7 +1490,7 @@ input[type='checkbox']:checked + label:after {
   transition: all 0.6s;
 }
 #hover-me:hover {
-  opacity: 0.7;
+  opacity: 0.95;
   transition: all 0.6s;
 }
 

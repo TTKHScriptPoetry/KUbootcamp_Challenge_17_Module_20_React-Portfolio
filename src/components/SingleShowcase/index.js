@@ -19,7 +19,7 @@ class SingleShowcase extends Component{
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'cover',  
       // backgroundAttachment: 'fixed', 
-      opacity: '1.0',
+      opacity: '0.95', //shows no rectangular boundary
     };
     return (
       // <div className="bg-secondary p-3 mb-0 flex-row  align-center border-top-thin ">
