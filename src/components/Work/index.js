@@ -9,7 +9,7 @@ const Work  = () => {
       category: 'individual',
       description: 'Server-Side APIs Challenge: Weather Dashboard',
       whereto: "https://github.com/MercuryKTgithub/KUbootcamp_MilestoneAssignments/tree/main/Challenge_06_Weather_Dashboard",
-      liveurl: "https://mercuryktgithub.github.io/KUbootcamp_MilestoneAssignments/Challenge_06_Weather_Dashboard/,"
+      liveurl: "https://mercuryktgithub.github.io/KUbootcamp_MilestoneAssignments/Challenge_06_Weather_Dashboard/",
     },
     {
       name: 'Challenge 2',
