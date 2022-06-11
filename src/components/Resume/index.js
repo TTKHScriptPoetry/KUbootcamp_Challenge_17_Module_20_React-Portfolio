@@ -4,11 +4,13 @@ function Resume() {
   return (
     <div className='flex-row justify-space-between'> 
     
+      {/* <div className={`col-12 col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}> */}
       <div className={`col-12 col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}>
         <h2>Resume</h2>
         <span className="pill mb-2"><a title='Click to Download' href={require(`../../assets/docs/SoftwareDeveloper_KimberlyTran_Resume.pdf`)} >My Resume</a></span>
       </div>
 
+      {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-1 mt-4`}> */}
       <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-1 mt-4`}>
         <h4> Front-end Proficiencies</h4>
         <p className="pill mb-1" > HTML </p>
@@ -18,10 +20,12 @@ function Resume() {
         <p className="pill mb-1" > React  </p>
 
       </div>
-      <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-3`}>
+      {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-3`}> */}
+      <div className={`col-lg-6 col-md-6 col-sm-3 mb-3`}>
         &nbsp;
       </div>
 
+      {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-4 mt-2`}> */}
       <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-4 mt-2`}>
         <h4> Back-end Proficiencies</h4>
         <p className="pill mb-1" > Node.js | Express </p>
@@ -32,7 +36,8 @@ function Resume() {
         <p className="pill mb-1" > MSSQL | Transact-SQL | Store-procedure  </p>
         <p className="pill mb-1" > VB | C#, ADO.NET | ORM Entity Framework  </p>
       </div>
-      <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-3`}>
+      {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-3`}> */}
+      <div className={`col-lg-6 col-md-6 col-sm-3 mb-3`}>
         &nbsp;
       </div>
 

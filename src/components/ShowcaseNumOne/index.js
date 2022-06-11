@@ -30,21 +30,21 @@ class ShowcaseNumOne extends Component{
             <div id="hover-me">
                 {/* <span > Hover Me </span> */}
                 <div style={screenOrigin} id="be-gone">
-                  <div  style={{ 'width' : 560, 'height' : 310, 'paddingTop': 5, 'textShadow': '1px 1px 1px var(--tertiary)'}} >                     
+                  <div className='worksample-photo' >                     
                     <p>Consuming Server-Side APIs </p>
                   </div>
                 </div>
-                <div id="hover-content" style={screenHovering}>
-                  <div style={{ 'width' : 560, 'height' : 310}}>
-                    <br></br><br></br><br></br><br></br> 
+                <div style={screenHovering} id="hover-content" >
+                  <div className='worksample-detail' >
                     <a href="https://mercuryktgithub.github.io/KUbootcamp_MilestoneAssignments/Challenge_06_Weather_Dashboard" target={'_blank'} 
                         rel="noreferrer" 
                         alt="Weather Dashboard" 
                         title="Go to Weather Dashboard Website"> 
-                        Weather Dashboard
+                        Weather Dashboard 
                     </a> 
-                    <br></br> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                    <br></br>&nbsp;&nbsp;
+                   
                     <a href="https://github.com/MercuryKTgithub/KUbootcamp_MilestoneAssignments/tree/main/Challenge_06_Weather_Dashboard" target={'_blank'} 
                         rel="noreferrer"  
                         alt="Github Repos" 

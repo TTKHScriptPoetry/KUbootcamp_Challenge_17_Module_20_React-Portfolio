@@ -11,6 +11,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import SingularShow from './components/SingularShow';
 import CompositeShowcase from './components/CompositeShowcase';
+import ShowcaseNumOne from './components/ShowcaseNumOne';
 
 function App() {
   // const [categories] = useState([

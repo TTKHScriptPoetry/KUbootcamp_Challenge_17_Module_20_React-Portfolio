@@ -18,10 +18,8 @@
   --dark: rgba(70, 83, 143, 0.900);
   /* --dark: rgba(121, 81, 76, 0.956); */
   --white: rgb(255, 255, 255);
-  --emphasis-catchy: rgb(229, 122, 131);
- 
- --distance-from-divider: 35px;
- --likable-font-family: Helvetica, Arial, sans-serif;  
+  /* --emphasis-catchy: rgb(229, 122, 131); */
+  --emphasis-catchy: rgba(70, 83, 143, 0.980);
 
  --border-radius: 0.3rem;
  --spacing-one: calc(1rem * 0.25);
@@ -31,7 +29,8 @@
  --spacing-five: calc(1rem * 3);
  --designer-font-primary: "Aladin"; /*"Playball";*/
  --casual-technical-font: "Aladin";
- --paragraph-coding-style: "JetBrains Mono"; /*"Marmelad"; */
+ --paragraph-coding-mono-font: "JetBrains Mono"; /*"Marmelad"; */
+ --title-flower-theme-font: "Playball";
 
 }
 
@@ -72,22 +71,69 @@ header h1{
    font-family: var(--designer-font-primary);
    font-weight: 700;
 }
+ 
+ .hero {
+  /* background-image: url("assets/images/hero-bg-tulips.jpg"); */
+  /*background-size: cover;  tells the browser to make sure the image always covers the entire container, image might not be whole*/
+  /*background-position: center;  affect the bg image position*/    
+  /*background-attachment: fixed;  places the image relative to the viewport instead of the element. */
+  /* background-position: 100%; use same percentage to make sure the hero and the header nav pictures line up, hero bg graphics not in use */
+  
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: flex-end; /*in case h3 doesn't get pushed down and there are 2 or more content entities*/
+  border-top: 3px dotted var(--tertiary);
+  border-bottom: 3px dotted var(--tertiary);
+  
+  margin-top: 0;
+  padding-bottom: 22px;
+ 
+  /* background: linear-gradient(var(--quatrinary), var(--white));
+  background: -webkit-linear-gradient(var(--quatrinary), var(--white));  */
+ 
+ }
+ 
+ .hero-greeting {   
+  text-align: center;
+  margin: 4.0% 0 0 1.5%;
+  /* margin: 0; */
+  font-size: 15px;
+ }
+ 
+ .hero-greeting h4 {
+  font-style: normal;
+  font-size: 44px;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--secondary); 
+  
+  padding: 35px 15px;
+  text-shadow: -2px 2px 1px var(--tertiary);
+  margin: 35px 180px 35px 0;
+  
+ }
+ 
+ /* End of Hero Section*/
+ 
 
-footer{
-  border-top: 1px solid var(--quatrinary);
-  background-color: var(--white) !important;  
-  background: linear-gradient(var(--white), var(--secondary));
-  background: -webkit-linear-gradient(var(--white), var(--secondary)); 
-
+main .profile-photo {
+  width: 157px ;
+  height: 220px;
+  opacity: 65%;
 }
 
-footer a{
-  transition: all 0.2s;
+main .about-me {
+  font-size: 0.7rem !important;
+  font-weight: 500;
 }
 
-footer a:hover {
-  opacity: 0.80;
+main p{  
+  font-weight: 600;
+  letter-spacing: 0 !important;
+  font-size: 0.85rem !important;
+  font-family: var(--paragraph-coding-mono-font);
 }
+
 
 main a {
   color: var(--dark);
@@ -103,11 +149,6 @@ main a:hover{
   font-weight: 500;
 }
 
-main .about-me {
-  font-size: 0.7rem !important;
-}
-
-
 main h2{  
   text-shadow: 1px 1px 1px var(--white) !important;
   letter-spacing: 2px !important;
@@ -118,6 +159,8 @@ main h4{
   color: var(--primary);
   text-shadow: 1px 1px 1px var(--white) !important;
 }
+
+
 
 textarea:focus, input:focus{
   outline: none;
@@ -182,10 +225,10 @@ h6 {
   font-size: 1rem;
 }
 
-p {
+/* p {
   font-size: 1.3rem;
   margin-top: 0;
-}
+} */
 
 nav {
   width: 100%;
@@ -218,12 +261,6 @@ nav a:hover, span:hover{
   letter-spacing: 1px;
   
 }
-
-/* nav h1 {
-  font-size: 2.4rem !important;
-  font-family: var(--designer-font-primary);
-  font-weight: 700;
-} */
 
 .page-title {
   text-align: center;
@@ -271,40 +308,17 @@ nav a:hover, span:hover{
   border-top: 1px solid var(--emphasis-list-item-color);
 }
 
-ul {
-  /* color: var(--secondary);
-  margin: 5;
-  background-color: var(--dark);
-  padding: 0.35rem 0.35rem 0.35rem 0.55rem;
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
-  font-family: var(--designer-font-primary); */
-  color: var(--secondary);
-  margin: 0;
-  
-  padding: 0 25px;
-  /* padding: 0.625rem; */
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
-  list-style: circle;
-}
-
-li {
-  
-  /* font-size: 1.3rem; */
-  /* padding: 2.5%; */
-  font-size: 1.0rem;
-  font-family: var(--paragraph-coding-style) !important;
-}
-
-p{
-  /* padding-left: 0.5%; */
-  font-size: 0.9rem !important;
-  font-family: var(--paragraph-coding-style) !important;
  
-}
+/* p{
+  
+  font-size: 0.9rem !important;
+  font-family: var(--paragraph-coding-mono-font) !important;
+ 
+} */
 
 /* span{
   font-size: 0.9rem !important;
-  font-family: var(--paragraph-coding-style) !important;
+  font-family: var(--paragraph-coding-mono-font) !important;
   padding: 0.15rem 0.5rem !important
  
 } */
@@ -349,49 +363,6 @@ p{
 }
 
 
-input[type='checkbox']:checked + label:before, 
-input[type='checkbox']:not(:checked) + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  border: 2px solid var(--secondary);
-  border-radius: 100%;
-  background: var(--light);
-  background-color: var(--secondary);
-  color: red;
-}
-input[type='checkbox']:checked + label:after,
-input[type='checkbox']:not(:checked) + label:after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background-color: var(--secondary);
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  color: red;
-}
-
-input[type='checkbox']:not(:checked) + label:after {
-  color: red;
-  opacity: 0;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-input[type='checkbox']:checked + label:after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  color: red;
-}
-
 /* LAYOUT */
 .container {
   width: 89%;
@@ -411,21 +382,79 @@ input[type='checkbox']:checked + label:after {
 } 
 
 .worksample-photo {
-  /* width: 513px;
+  width: 517px;
+  height: 302px;
+
+  /* width: 560px;
+  height: 310px; */
+
+  /* width: 413px; done
   height: 242px; */
-  /* width: 207px;
+
+  /* width: 310px;  done
+  height: 181px; */
+
+  /* width: 207px; done
   height: 121px; */
-  width: 560px;
-  height: 310px;
-  opacity: 80%;
-  
+
+  opacity: 85%;
+
+  padding: 6px 0 0 0;
 } 
 
-.profile-photo {
-  width: 157px;
-  height: 220px;
-  opacity: 65%;
+.worksample-photo p{
+  color: var(--dark);
+  font-size: 0.80rem !important;
+  text-shadow: 1px 1px 1px var(--white);
+  font-weight: 700;
 } 
+
+.worksample-detail{
+  width: 517px;
+  height: 302px;
+  
+  /* width: 413px; done
+  height: 242px; */
+
+  /* width: 310px; done
+  height: 181px; */
+
+  /* width: 207px; done
+  height: 121px; */
+
+  opacity: 85%;
+  text-align: center;
+
+  padding: 105px 0 0 15px;
+ 
+}
+
+.worksample-detail p{
+  color: var(--emphasis-list-item-color);
+  text-shadow: 1px 1px 1px var(--white);
+  font-weight: bold;
+
+  font-size: 1.1rem !important;
+} 
+
+
+footer{
+  border-top: 1px solid var(--quatrinary);
+  background-color: var(--white) !important;  
+  background: linear-gradient(var(--white), var(--secondary));
+  background: -webkit-linear-gradient(var(--white), var(--secondary)); 
+
+}
+
+footer a{
+  transition: all 0.2s;
+}
+
+footer a:hover {
+  opacity: 0.80;
+}
+
+
 
 /* DISPLAY */
 .display-none {
@@ -1258,14 +1287,6 @@ input[type='checkbox']:checked + label:after {
 
 /* col-lg */
 @media screen and (min-width: 992px) {
-  nav {
-    width: auto;
-    justify-content: flex-end;
-  }
-
-  .page-title {
-    width: auto;
-  }
 
   .col-md-auto {
     flex-grow: 1;
@@ -1447,37 +1468,51 @@ input[type='checkbox']:checked + label:after {
   
 }
 
-.embraced{
-  border: 1px solid var(--light);
-}
-
 .border-photo-small{
   border: 1px solid var(--emphasis-list-item-color);
 }
 
+/********** Start of Graphic Hovering based Portfolio: position should not depend on these content definition *************/
+/********** Look for worksample-photo and worksample-detail instead - only font-size matters here ***********/
+
 #hover-content {
   display: none;
   transition: all 0.6s;
+   
 }
 
 #hover-me:hover #hover-content {
   display:block;
-  transition: all 0.6s;
+  transition: all 0.6s;  
 }
 
+/* varies per media query - start here */
 #hover-me:hover #hover-content a {
-  color: var(--emphasis-catchy);
-  text-shadow: 1px 1px 1px var(--white);
-  font-family: var(--casual-technical-font);
-  font-size: 1.10rem !important;
   transition: all 0.6s;
+
+  color: var(--emphasis-catchy);
+  text-shadow: 1px 1px 2px var(--white);
+  font-family: var(--paragraph-coding-mono-font) !important;
+  font-weight: 700;
+
+  font-size: 0.85rem !important;
+  
 }
 
 #hover-me:hover #hover-content a:hover {
   color: var(--white);
   text-shadow: 1px 1px 1px var(--emphasis-list-item-color);
-  font-family: var(--casual-technical-font);
-  font-size: 1.10rem !important;
+  font-family: var(--paragraph-coding-mono-font);
+  font-weight: 700;
+
+  font-size: 0.85rem !important;
+}
+
+#hover-me:hover #hover-content img {
+  width: 13%;
+  height: 37%;
+  margin-left: 13px;
+  padding-top: 15px
 }
 
 /* To dim the github icon when hovering */
@@ -1496,138 +1531,432 @@ input[type='checkbox']:checked + label:after {
 
 /* |||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* (1) */
-@media screen and (max-width: 575px) {
-  .border-photo-small{
-    width: 170px;
-    height: 160px;
-    position: relative; /* test with LG Optimus - No more sticky header */     
+@media screen and (max-width: 575px) {  
+
+  header h1{
+    font-size: 28px !important;
+  }
+
+  nav a, span{
+    padding: 3px 4px;
+    margin: 0 4px;
+
+    font-size: 0.8rem !important; 
+    letter-spacing: 0;
+  }
+
+  nav a:hover, span:hover{
+    padding: 3px 4px;
+    margin: 0 4px;
+
+    font-size: 0.8rem !important; 
+    letter-spacing: 0;
+
+    color: var(--white)!important;
+    text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
+     
+    font-family: var(--casual-technical-font) !important;
+    font-weight: 700;
+  }
+
+  .hero{
+    padding-bottom: 2px;
+    background-size: cover !important; 
+    background-repeat: no-repeat !important; 
+    background-position: right;
+  }
+
+  .hero-greeting {   
+    text-align: center !important; 
+    margin: 0.6% 0 0 0.5% !important; 
+    font-size: 12px !important; 
+   }
+   
+   .hero-greeting h4 {
+    font-style: normal !important; 
+    font-size: 20px !important; 
+    padding: 7px 3px !important; 
+    text-shadow: -2px 2px 1px var(--tertiary) !important; 
+    margin: 7px 36px 7px 0 !important; 
+    
+   }
+
+    /***** Start of main - media query ******/
+
+  main .profile-photo {
+    width: 79px  !important; 
+    height: 111px !important;
+    opacity: 85% !important;
+  }
+
+  main .about-me {
+    font-size: 0.55rem !important;
+  }
+
+  main p{  
+    letter-spacing: 0 !important;
+    font-size: 0.65rem !important;
+    padding: 0;
+  }
+
+  main a {    
+    font-size: 0.85rem !important;
+    text-decoration: none;
+  }
+  
+  main a:hover{
+    font-size: 0.85rem !important;
+    text-decoration: none;
+  }
+   
+
+  main h2{  
+    text-shadow: 1px 1px 1px var(--white) !important;
+    letter-spacing: 1px !important;
+    font-size: 1.10rem !important;
+  }
+  
+  main h4{
+    font-size: 0.9rem !important;
+    color: var(--primary);
+    text-shadow: 1px 1px 1px var(--white) !important;
+
+  }
+ 
+  /***** End of main - media query ******/
+  
+  .worksample-photo {
+    width: 207px  !important;
+    height: 121px !important;
+     
+    padding: 0 0 0 0 !important; 
   } 
-
-  .embraced{
-    width: 220px;
-    height: 220px;
+  
+  .worksample-photo p{
+    color: var(--dark);
+    font-size: 0.50rem !important;
+    text-shadow: 1px 1px 1px var(--white);
+    font-weight: 700;
+  } 
+  
+  .worksample-detail{
+    width: 207px !important;
+    height: 121px !important;
+     
+    padding: 35px 0 0 8px !important;
+     
+  }
+  
+  .worksample-detail p{
+    font-size: 0.5rem !important;
+  }   
+  
+  #hover-me:hover #hover-content a {
+    font-size: 0.45rem !important;
+  }
+  
+  #hover-me:hover #hover-content a:hover {
+    font-size: 0.45rem !important;
   }
 
-  h1{
-    font-size: 16px !important;
+  #hover-me:hover #hover-content img {
+    width: 17% !important;
+    height: 29% !important;
+    margin-left: 13px !important;
   }
 
-  p{
-    font-size: 16px !important;
-  }
-
-  header a{
-    font-size: 18px;
-  }
-
-  ul, li{
-    font-size: 13px;
-  }
 }
 
-/* |||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* |||||||||||||||||||||||| Ipad Mini ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* (2) */
 @media screen and (max-width: 768px) {    
-  .border-photo-small{
-    width: 170px  !important;
-    height: 200px  !important;
-    position: relative; /* test with LG Optimus - No more sticky header */     
+  header h1{
+    font-size: 38px ;
+  }
+
+  nav a, span{
+    padding: 3px 4px ;
+    margin: 0 4px ;
+
+    font-size: 1.2rem !important;  
+    letter-spacing: 0 ;
+  }
+
+  nav a:hover, span:hover{
+    padding: 3px 4px ;
+    margin: 0 4px ;
+
+    font-size: 1.2rem !important; 
+    letter-spacing: 0 ;
+
+    color: var(--white);
+    text-shadow: 1px 1px 1px var(--emphasis-list-item-color) ;
+     
+    font-family: var(--casual-technical-font) ;
+    font-weight: 700;
+  }
+
+  .hero{
+    padding-bottom: 8px ;
+    background-size: cover ; 
+    background-repeat: no-repeat  ; 
+    background-position: right ;
+  }
+
+  .hero-greeting {   
+    text-align: center ; 
+    margin: 1.8% 0 0 1.8% ; 
+    font-size: 13px ; 
+   }
+   
+   .hero-greeting h4 {
+    font-style: normal ; 
+    font-size: 22px ; 
+    padding: 7px 3px ; 
+    text-shadow: -2px 2px 1px var(--tertiary) ; 
+    margin: 40px 24px 30px 0 ; 
+    
+   }
+
+    /***** Start of main - media query ******/
+
+  main .profile-photo {
+    width: 119px  ; 
+    height: 166px ;
+    opacity: 95% ;
+  }
+
+  main .about-me {
+    font-size: 0.66rem ;
+  }
+
+  .pill {
+    margin: 5px 0;
+    padding: 0.04rem 0.3rem ;
+    outline: none;
   } 
 
-  .embraced{
-    width: 220px  !important;
-    height: 3225px  !important;
+  main p{  
+    letter-spacing: 0 ;
+    font-size: 0.67rem ;
+    padding: 0 ;
+     
   }
 
-  h1{
-    font-size: 15px !important;
+  main a {    
+    font-size: 0.85rem ;
+    text-decoration: none;
+     
+  }
+  
+  main a:hover{
+    font-size: 0.85rem ;
+    text-decoration: none;
+  }
+   
+
+  main h2{  
+    text-shadow: 1px 1px 1px var(--white) ;
+    letter-spacing: 1px ;
+    font-size: 1.40rem ;
+  }
+  
+  main h4{
+    font-size: 1.15rem ;
+    color: var(--primary);
+    text-shadow: 1px 1px 1px var(--white) ;
+
+  }
+ 
+  /***** End of main - media query ******/
+  
+  .worksample-photo {
+    width: 310px ; 
+    height: 181px ;
+     
+    padding: 0 0 0 0;
+  } 
+  
+  .worksample-photo p{
+    color: var(--dark);
+    font-size: 0.70rem ;
+    text-shadow: 1px 1px 1px var(--white);
+    font-weight: 700;
+  } 
+  
+  .worksample-detail{
+    width: 310px ; 
+    height: 181px ;
+     
+    padding: 53px 0 0 15px ;
+     
+  }
+  
+  .worksample-detail p{
+    font-size: 0.85rem ;
+  }   
+  
+  #hover-me:hover #hover-content a {
+    font-size: 0.70rem ;
+  }
+  
+  #hover-me:hover #hover-content a:hover {
+    font-size: 0.70rem ;
   }
 
-  p{
-    font-size: 14px !important;
+  #hover-me:hover #hover-content img {
+    width: 16% ;
+    height: 32% ;
+    margin-left: 13px ;
   }
 
-  header a{
-    font-size: 14px;
-  }
-
-  ul, li{
-    font-size: 14px;
-  }
 }
 
-/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||||||||Surface Pro 7|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* (3) */
-@media screen and (max-width: 980px) 
+@media screen and (max-width: 992px) 
 { 
-  .border-photo-small{
-    width: 340px;
-    height: 350px;
-    position: relative;
-  }
-  .embraced{
-    width: 420px;
-    height: 430px;
-    position: relative;
+  header h1{
+    font-size: 38px ;
   }
 
-  h1{
-    font-size: 17px  !important;
+  nav a, span{
+    padding: 3px 4px ;
+    margin: 0 4px ;
+
+    font-size: 1.18rem !important; 
+    letter-spacing: 0 ;
   }
 
-  p{
-    font-size: 17px !important;
+  nav a:hover, span:hover{
+    padding: 3px 4px ;
+    margin: 0 4px ;
+
+    font-size: 1.18rem  !important;  
+    letter-spacing: 0 ;
+
+    color: var(--white);
+    text-shadow: 1px 1px 1px var(--emphasis-list-item-color) ;
+     
+    font-family: var(--casual-technical-font) ;
+    font-weight: 700;
   }
-}
 
+  .hero{
+    padding-bottom: 11px ;
+    background-size: cover ; 
+    background-repeat: none ; 
+    background-position: right ;
+  }
 
-/* End of Footer here ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+  .hero-greeting {   
+    text-align: center ; 
+    margin: 1.8% 0 0 1.6% ; 
+    font-size: 14px ; 
+   }
+   
+   .hero-greeting h4 {
+    font-style: normal ; 
+    font-size: 22px ; 
+    padding: 6px 5px ; 
+    text-shadow: -2px 2px 1px var(--tertiary) ; 
+    margin: 35px 32px 35px 0 ; 
+    
+   }
 
-section{
- /* border:dashed 1px;  */
- /* padding: 50px;  This gives more room to the background image before the hero class content*/
- padding-top: 55px;
- padding-bottom: 0;
-}
+    /***** Start of main - media query ******/
 
-.hero {
- /* background-image: url("assets/images/hero-bg-tulips.jpg"); */
- /*background-size: cover;  tells the browser to make sure the image always covers the entire container, image might not be whole*/
- /*background-position: center;  affect the bg image position*/    
- /*background-attachment: fixed;  places the image relative to the viewport instead of the element. */
- /* background-position: 100%; use same percentage to make sure the hero and the header nav pictures line up, hero bg graphics not in use */
- display: flex;
- justify-content: right;
- flex-wrap: wrap;
- align-items: flex-end; /*in case h3 doesn't get pushed down and there are 2 or more content entities*/
- border-top: 0 solid var(--dark);
- border-bottom: 1px solid var(--tertiary);
+  main .profile-photo {
+    width: 138px  ; 
+    height: 194px ;
+    opacity: 95% ;
+  }
+
+  main .about-me {
+    font-size: 0.68rem ;
+  }
+
+  .pill {
+    margin: 5px 0 ;
+    padding: 0.04rem 0.3rem ;
+    outline: none;
+  } 
+
+  main p{  
+    letter-spacing: 0 ;
+    font-size: 0.71rem ;
+    padding: 0 ;
+     
+  }
+
+  main a {    
+    font-size: 0.90rem ;
+    text-decoration: none;
+     
+  }
+  
+  main a:hover{
+    font-size: 0.90rem ;
+    text-decoration: none;
+  }
+   
+
+  main h2{  
+    text-shadow: 1px 1px 1px var(--white) ;
+    letter-spacing: 1px ;
+    font-size: 1.45rem ;
+  }
+  
+  main h4{
+    font-size: 1.20rem ;
+    color: var(--primary);
+    text-shadow: 1px 1px 1px var(--white) ;
+
+  }
  
- margin-top: 0;
- padding-bottom: 22px;
+  /***** End of main - media query ******/
+  
+  .worksample-photo {
+    width: 413px ;
+    height: 242px ;
+     
+    padding: 4px 0 0 0 ;
+  } 
+  
+  .worksample-photo p{
+    color: var(--dark);
+    font-size: 0.75rem ;
+    text-shadow: 1px 1px 1px var(--white);
+    font-weight: 700;
+  } 
+  
+  .worksample-detail{
+    width: 413px ;
+    height: 242px ;
+     
+    padding: 80px 0 0 15px ;
+     
+  }
+  
+  .worksample-detail p{
+    font-size: 0.95rem ;
+  }   
+  
+  #hover-me:hover #hover-content a {
+    font-size: 0.75rem ;
+  }
+  
+  #hover-me:hover #hover-content a:hover {
+    font-size: 0.75rem ;
+  }
 
- background: linear-gradient(var(--quatrinary), var(--white));
- background: -webkit-linear-gradient(var(--quatrinary), var(--white)); 
+  #hover-me:hover #hover-content img {
+    width: 14% ;
+    height: 30% ;
+    margin-left: 13px ;
+  }
 
 }
 
-.hero-greeting {   
- text-align: center;
- margin: 4.0% 0 0 1.5%;
- /* margin: 0; */
- font-size: 15px;
-}
-
-.hero-greeting h4 {
- font-style: normal;
- font-size: 44px;
- font-family: 'Courier New', Courier, monospace;
- color: var(--secondary); 
- 
- padding: 35px 15px;
- text-shadow: -2px 2px 1px var(--tertiary);
- margin: 35px 180px 35px 0;
- 
-}
-
-/* End of Hero Section*/
+/* End of Media Queries here ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/

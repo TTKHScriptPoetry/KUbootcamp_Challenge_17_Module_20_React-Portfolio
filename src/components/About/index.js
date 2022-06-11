@@ -6,7 +6,7 @@ function About() {
   return (
     <div className='flex-row justify-space-between'> 
     
-      <div className={`col-12 col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}>
+      <div className={`col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}>
         <h2>About Me</h2>
         {/* <span className="pill mb-2"><a title='Click to Download' href={require(`../../assets/docs/SoftwareDeveloper_KimberlyTran_Resume.pdf`)} >My Resume</a></span> */}
         <img src={formalPhoto} alt="Kim Huong Tran" className='profile-photo border-photo-small' />
