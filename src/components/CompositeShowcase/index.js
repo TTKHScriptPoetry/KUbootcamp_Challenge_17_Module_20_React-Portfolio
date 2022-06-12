@@ -1,8 +1,12 @@
 import React from 'react'
-// import myGithub from '../../assets/images/small/whereto/light_theme/github_alt_48.png';
  
 import ShowcaseNumOne from '../ShowcaseNumOne';
 import ShowcaseNumTwo from '../ShowcaseNumTwo';
+import ShowcaseNumThree from '../ShowcaseNumThree';
+import ShowcaseNumFour from '../ShowcaseNumFour';
+import ShowcaseNumFive from '../ShowcaseNumFive';
+import ShowcaseNumSix from '../ShowcaseNumSix';
+import ShowcaseNumSeven from '../ShowcaseNumSeven';
 
 const CompositeShowcase  = () => {
   return (
@@ -11,8 +15,12 @@ const CompositeShowcase  = () => {
         <h2>Portfolio</h2>
         <div className="mb-1 flex-row justify-space-between">
           <ShowcaseNumOne></ShowcaseNumOne>
+          <ShowcaseNumThree></ShowcaseNumThree>
           <ShowcaseNumTwo></ShowcaseNumTwo>
-         
+          <ShowcaseNumFour></ShowcaseNumFour>
+          <ShowcaseNumFive></ShowcaseNumFive>
+          <ShowcaseNumSix></ShowcaseNumSix>
+          <ShowcaseNumSeven></ShowcaseNumSeven>
         </div>
         
         {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-1 mt-4`}>

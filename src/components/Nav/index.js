@@ -20,7 +20,7 @@ function Nav(props) {
         <h1 > 
          Kim Huong
         </h1>
-        <nav className="text-right">
+        <nav className="text-right exclusive">
             <span className={`${aboutMeSelected && 'navActive'}`} onClick={() => { setContactSelected(false); 
                                                 setResumeSelected(false);
                                                 setAboutMeSelected(true);

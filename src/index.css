@@ -13,12 +13,13 @@
   --emphasis-list-item-color: rgba(88, 113, 163, 0.960);
   --super-light  : rgba(174, 210, 255, 0.900);
   --light: rgb(110, 127, 187);
+  --heading-prime_color: rgba(61, 83, 143, 0.980);
   /* --light: rgb(96, 113, 173); */
   /* --light: rgba(222, 208, 184, 0.221); */
-  --dark: rgba(70, 83, 143, 0.900);
+  --dark: rgba(66, 83, 143, 0.970);
   /* --dark: rgba(121, 81, 76, 0.956); */
   --white: rgb(255, 255, 255);
-  /* --emphasis-catchy: rgb(229, 122, 131); */
+  --petal-theme-color: rgb(219, 112, 121);
   --emphasis-catchy: rgba(70, 83, 143, 0.980);
 
  --border-radius: 0.3rem;
@@ -30,7 +31,7 @@
  --designer-font-primary: "Aladin"; /*"Playball";*/
  --casual-technical-font: "Aladin";
  --paragraph-coding-mono-font: "JetBrains Mono"; /*"Marmelad"; */
- --title-flower-theme-font: "Playball";
+ --title-flower-theme-font: "Marmelad";
 
 }
 
@@ -64,14 +65,14 @@ header{
   background-color: var(--super-light ) !important;
   opacity: 0.90;
   padding-top: 1px;
-  /* margin: 0; */
+  height: 121px;
 }
 
 header h1{
-   color: var(--dark);
+   color: var(--heading-prime_color);
    font-family: var(--designer-font-primary);
    font-weight: 700;
-   text-shadow: 1px 1px var(--primary) !important;
+   text-shadow: 1px 1px var(--white) !important;
 }
  
  .hero {
@@ -116,7 +117,7 @@ header h1{
  
  /* End of Hero Section*/
  
-
+/* 
 main .profile-photo {
   width: 157px ;
   height: 220px;
@@ -161,7 +162,7 @@ main h4{
   color: var(--primary);
   text-shadow: 1px 1px 1px var(--white) !important;
 }
-
+ */
 
 
 textarea:focus, input:focus{
@@ -227,30 +228,28 @@ h6 {
   font-size: 1rem;
 }
 
-/* p {
-  font-size: 1.3rem;
-  margin-top: 0;
-} */
 
- nav {
-  width: 81%;
+nav {
+  /* width: 81%;  */
+  /* would effect mobile rendering*/
   justify-content: center;
-  /* padding: 0; */
-  padding: 19px 10px 0 0;
+  padding: 19px 10px 20px 0;
   
 }
 
 nav a, span {
-  /* padding: 19px 10px 0 0; */
-  margin: 0 15px 0 15px;
+  padding: 1px 1px 5px 0;
+  margin: 0 4px 0 0;
   transition: all 0.2s;
 
   color: var(--dark) !important;
   text-shadow: 1px 1px var(--primary) !important;
-  font-size: 1.4rem !important; 
+  font-size: 1.4rem; 
   font-family: var(--casual-technical-font) !important;
   font-weight: 700;
   letter-spacing: 1px;
+
+  /* border-bottom: 1px solid var(--super-light);  */
   
 }
 
@@ -264,12 +263,90 @@ nav a:hover, span:hover{
   
 }
 
-/* .page-title {
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  font-size: 2.5rem; 
-}*/
+/* for the menu only */
+.exclusive span {
+  padding: 1px 31px 0 10px;
+  margin: 0 4px 0 0;
+  transition: all 0.2s;
+
+  color: var(--dark) !important;
+  text-shadow: 1px 1px var(--primary) !important;
+  font-size: 1.4rem !important; 
+  font-family: var(--casual-technical-font) !important;
+  font-weight: 700;
+  letter-spacing: 1px;  
+}
+
+.exclusive span:hover {
+  color: var(--white)!important;
+  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
+  font-size: 1.4rem !important;
+  font-family: var(--casual-technical-font) !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.exclusive .navActive { 
+  cursor: auto;
+  
+  font-family: var(--casual-technical-font) !important;
+  font-weight: 700;
+
+  color: var(--white) !important;
+  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
+  
+}
+
+main .profile-photo {
+  width: 157px ;
+  height: 220px;
+  opacity: 65%;
+}
+
+main .about-me {
+  font-size: 0.7rem !important;
+  font-weight: 500;
+}
+
+main p{  
+  font-weight: 600;
+  letter-spacing: 0 !important;
+  font-size: 0.80rem !important;
+  font-family: var(--paragraph-coding-mono-font);
+}
+
+
+main a {
+  color: var(--dark);
+  font-size: 1.1rem !important;
+  text-decoration: none;
+}
+
+main a:hover{
+  color: var(--white);
+  font-size: 1.1rem !important;
+  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main h2{  
+  text-shadow: 1px 1px 1px var(--white) !important;
+  letter-spacing: 2px !important;
+  margin: 0 0 18px 0;  
+}
+
+main h4{
+  font-size: 1.4rem !important;
+  color: var(--primary);
+  text-shadow: 1px 1px 1px var(--white) !important;
+}
+
+.separator {
+  border-bottom: 3px solid var(--super-light); 
+  border-radius: 5px;
+  
+}
 
 .btn,
 .pill {
@@ -313,22 +390,6 @@ nav a:hover, span:hover{
   border-top: 1px solid var(--emphasis-list-item-color);
 }
 
- 
-/* p{
-  
-  font-size: 0.9rem !important;
-  font-family: var(--paragraph-coding-mono-font) !important;
- 
-} */
-
-/* span{
-  font-size: 0.9rem !important;
-  font-family: var(--paragraph-coding-mono-font) !important;
-  padding: 0.15rem 0.5rem !important
- 
-} */
- 
-
 /* FORM */
 .form-label,
 .form-input,
@@ -370,7 +431,7 @@ nav a:hover, span:hover{
 
 /* LAYOUT */
 .container {
-  width: 89%;
+  width: 89% !important;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;  
@@ -385,13 +446,13 @@ nav a:hover, span:hover{
   opacity: 95%;
   /* margin: 15px 30px 0 0;   */
 } 
-
+ 
 .worksample-photo {
-  width: 517px;
-  height: 302px;
+  width: 560px;
+  height: 310px;
 
-  /* width: 560px;
-  height: 310px; */
+  /* width: 517px; done
+  height: 302px; */
 
   /* width: 413px; done
   height: 242px; */
@@ -402,21 +463,30 @@ nav a:hover, span:hover{
   /* width: 207px; done
   height: 121px; */
 
-  opacity: 85%;
+  opacity: 90%;
 
   padding: 6px 0 0 0;
+
+  /* border-right: 1px solid var(--super-light);
+  border-bottom: 1px solid var(--super-light); */
+
 } 
 
 .worksample-photo p{
   color: var(--dark);
-  font-size: 0.80rem !important;
   text-shadow: 1px 1px 1px var(--white);
+  
+  font-size: 0.80rem !important;
   font-weight: 700;
 } 
 
 .worksample-detail{
-  width: 517px;
-  height: 302px;
+  width: 560px;
+  height: 310px;
+
+  /* width: 517px; done
+  height: 302px; 
+  padding: 105px 0 0 15px; */
   
   /* width: 413px; done
   height: 242px; */
@@ -430,8 +500,7 @@ nav a:hover, span:hover{
   opacity: 85%;
   text-align: center;
 
-  padding: 105px 0 0 15px;
- 
+  padding: 105px 0 0 5px;
 }
 
 .worksample-detail p{
@@ -1466,22 +1535,7 @@ footer img{
   }
 }
 
-.navActive { 
-  cursor: auto;
-  
-  font-family: var(--casual-technical-font) !important;
-  font-weight: 700;
-
-  color: var(--white) !important;
-  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
-  
-}
-
-.border-photo-small{
-  border: 1px solid var(--emphasis-list-item-color);
-}
-
-/********** Start of Graphic Hovering based Portfolio: position should not depend on these content definition *************/
+/********** Start of Graphic Hovering based Portfolio: position should not depend on these content definitions *************/
 /********** Look for worksample-photo and worksample-detail instead - only font-size matters here ***********/
 
 #hover-content {
@@ -1499,9 +1553,10 @@ footer img{
 #hover-me:hover #hover-content a {
   transition: all 0.6s;
 
-  color: var(--emphasis-catchy);
-  text-shadow: 1px 1px 2px var(--white);
-  font-family: var(--paragraph-coding-mono-font) !important;
+  color: var(--heading-prime_color);
+  text-shadow: -1px -2px 2px var(--white);
+
+  font-family: var(--title-flower-theme-font) !important;
   font-weight: 700;
 
   font-size: 0.85rem !important;
@@ -1510,9 +1565,10 @@ footer img{
 
 #hover-me:hover #hover-content a:hover {
   color: var(--white);
-  text-shadow: 1px 1px 1px var(--emphasis-list-item-color);
-  font-family: var(--paragraph-coding-mono-font);
-  font-weight: 700;
+  text-shadow: -1px -2px 1px var(--petal-theme-color)  !important;
+
+  font-family: var(--title-flower-theme-font);
+  font-weight: 800;
 
   font-size: 0.85rem !important;
 }
@@ -1520,7 +1576,8 @@ footer img{
 #hover-me:hover #hover-content img {
   width: 10%;
   height: 32%;
-  margin-left: 13px;
+  /* margin-left: 13px; */
+  margin-left: 2px;
   padding-top: 15px
 }
 
@@ -1533,6 +1590,7 @@ footer img{
   display: none;
   transition: all 0.6s;
 }
+
 #hover-me:hover {
   opacity: 0.95;
   transition: all 0.6s;
@@ -1541,26 +1599,30 @@ footer img{
 /* |||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* (1) */
 @media screen and (max-width: 575px) {  
+  header{
+    height: 85px !important;
+  }
 
   header h1{
-    font-size: 26px !important;
+    font-size: 25px !important;
   }
 
   nav {
+     
     padding: 5px 10px 0 0;
   }
 
-  nav a, span{
-    padding: 1px 4px !important; 
-    margin: 0 4px !important;
+  nav  a, span{
+    padding: 1px 1px 5px 0 !important;
+    margin: 0 4px 0 0 !important;
 
     font-size: 0.75rem !important; 
     letter-spacing: 0;
   }
 
   nav a:hover, span:hover{
-    padding: 3px 4px !important;
-    margin: 0 4px !important;
+    padding: 1px 1px 5px 0 !important;
+    margin: 0 4px 0 0 !important;
 
     font-size: 0.75rem !important; 
     letter-spacing: 0;
@@ -1571,6 +1633,17 @@ footer img{
     font-family: var(--casual-technical-font) !important;
     font-weight: 700;
   }
+
+  .exclusive span {
+    padding: 1px 8px 0 5px !important;
+    font-size: 0.70rem !important; 
+  }
+
+  .exclusive span:hover {
+    font-size: 0.70rem !important; 
+    
+  }
+
 
   .hero{
     padding-bottom: 2px;
@@ -1595,6 +1668,9 @@ footer img{
    }
 
     /***** Start of main - media query ******/
+  main span{
+    margin: 0 0 6px 1px !important;
+  }    
 
   main .profile-photo {
     width: 79px  !important; 
@@ -1684,8 +1760,12 @@ footer img{
 /* |||||||||||||||||||||||| Ipad Mini ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* (2) */
 @media screen and (max-width: 768px) {    
+  header{
+    height: 95px;
+  }
   header h1{
-    font-size: 38px ;
+    font-size: 36px ;
+    margin-right: 18px !important;
   }
 
   nav {
@@ -1693,18 +1773,18 @@ footer img{
   }
 
   nav a, span{
-    padding: 3px 4px ;
-    margin: 0 4px ;
+    padding: 1px 1px 5px 0 ;
+    margin: 0 4px 0 0 ;
 
-    font-size: 1.2rem ; 
+    font-size: 1.10rem ; 
     letter-spacing: 0 ;
   }
 
   nav a:hover, span:hover{
-    padding: 3px 4px ;
-    margin: 0 4px ;
+    padding: 1px 1px 5px 0 ;
+    margin: 0 4px 0 0 ;
 
-    font-size: 1.2rem ;
+    font-size: 1.10rem ;
     letter-spacing: 0 ;
 
     color: var(--white);
@@ -1712,6 +1792,16 @@ footer img{
      
     font-family: var(--casual-technical-font) ;
     font-weight: 700;
+  }
+
+  .exclusive span {
+    padding: 1px 10px 0 15px;
+    font-size: 1.10rem ; 
+  }
+
+  .exclusive span:hover {
+    font-size: 1.10rem ; 
+    letter-spacing: 1px;
   }
 
   .hero{
@@ -1737,6 +1827,9 @@ footer img{
    }
 
     /***** Start of main - media query ******/
+  main span{
+    margin: 0 0 9px 1px;
+  }    
 
   main .profile-photo {
     width: 119px  ; 
@@ -1834,8 +1927,13 @@ footer img{
 /* (3) */
 @media screen and (max-width: 992px) 
 { 
+  header{
+    height: 105px;
+  }
+
   header h1{
     font-size: 38px ;
+    margin-right: 19px !important;
   }
 
   nav {
@@ -1844,18 +1942,18 @@ footer img{
 
 
   nav a, span{
-    padding: 3px 4px ;
+    padding: 3px 6px ;
     margin: 0 4px ;
 
-    font-size: 1.18rem ; 
+    font-size: 1.16rem ; 
     letter-spacing: 0 ;
   }
 
   nav a:hover, span:hover{
-    padding: 3px 4px ;
+    padding: 3px 6px ;
     margin: 0 4px ;
 
-    font-size: 1.18rem  ;
+    font-size: 1.16rem  ;
     letter-spacing: 0 ;
 
     color: var(--white);
@@ -1863,6 +1961,16 @@ footer img{
      
     font-family: var(--casual-technical-font) ;
     font-weight: 700;
+  }
+
+  .exclusive span {
+    padding: 1px 9px 0 19px;
+    font-size: 1.14rem; 
+  }
+
+  .exclusive span:hover {
+    font-size: 1.14rem; 
+    letter-spacing: 1px;
   }
 
   .hero{
@@ -1888,6 +1996,9 @@ footer img{
    }
 
     /***** Start of main - media query ******/
+  main span{
+    margin: 0 0 12px 1px;
+  }    
 
   main .profile-photo {
     width: 138px  ; 

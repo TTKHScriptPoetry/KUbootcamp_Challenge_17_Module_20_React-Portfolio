@@ -26,8 +26,8 @@ class ShowcaseNumOne extends Component{
     return (
       // <div className="bg-secondary p-3 mb-0 flex-row  align-center border-top-thin ">
      
-          <div className='flex-row justify-space-between justify-center mb-2 text-center'>
-            <span id="hover-me">
+          <span className='flex-row justify-space-between justify-center mb-2 text-center'>
+            <span id="hover-me" className='separator' >
                 
               <div style={screenOrigin} id="be-gone">
                 <div className='worksample-photo' >                     
@@ -40,10 +40,10 @@ class ShowcaseNumOne extends Component{
                   <a href="https://mercuryktgithub.github.io/KUbootcamp_MilestoneAssignments/Challenge_06_Weather_Dashboard" target={'_blank'} 
                       rel="noreferrer" 
                       alt="Weather Dashboard" 
-                      title="Go to Weather Dashboard Website"> 
+                      title="Click for a Demo"> 
                       Weather Dashboard 
                   </a> 
-                  <br></br>&nbsp;&nbsp;
+                  <br></br> 
                   <a href="https://github.com/MercuryKTgithub/KUbootcamp_MilestoneAssignments/tree/main/Challenge_06_Weather_Dashboard" target={'_blank'} 
                       rel="noreferrer"  
                       alt="Github Repos" 
@@ -55,7 +55,7 @@ class ShowcaseNumOne extends Component{
               </div>
             
             </span>
-          </div>
+          </span>
 
 
       // </div>

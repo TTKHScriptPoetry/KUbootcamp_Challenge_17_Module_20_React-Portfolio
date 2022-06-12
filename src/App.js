@@ -45,7 +45,6 @@ function App() {
      
         <Hero></Hero>
         <main className="container">        
-          
           <ContactFrom></ContactFrom>
         </main>
         <Footer></Footer>  
@@ -74,7 +73,7 @@ function App() {
         </Nav>
         <Hero></Hero>
         <main className="container" >
-          <Work></Work>
+          <CompositeShowcase></CompositeShowcase>
         </main>
         <Footer></Footer>
       </div>
@@ -101,8 +100,7 @@ function App() {
             setWorkSelected={setWorkSelected}>  
           </Nav>
           <Hero></Hero>
-        <main className="container" >
-         
+        <main className="container" >         
           <Resume></Resume>
         </main>
         <Footer></Footer>
@@ -155,7 +153,7 @@ function App() {
           </Nav>
           <Hero></Hero>
           <main className='container' >
-            <CompositeShowcase></CompositeShowcase>
+            <About></About>            
           </main>
           <Footer></Footer>
         </div>
