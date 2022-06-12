@@ -62,14 +62,16 @@ header{
   top: 0;  /* Keep this header element on top of the stack, aka to the front */
   z-index: 9999;  /* To avoid future conflicts although the number seems like overkill - per lesson note */ 
   background-color: var(--super-light ) !important;
-  padding-bottom: 1px;
   opacity: 0.90;
+  padding-top: 1px;
+  /* margin: 0; */
 }
 
 header h1{
    color: var(--dark);
    font-family: var(--designer-font-primary);
    font-weight: 700;
+   text-shadow: 1px 1px var(--primary) !important;
 }
  
  .hero {
@@ -85,7 +87,7 @@ header h1{
   align-items: flex-end; /*in case h3 doesn't get pushed down and there are 2 or more content entities*/
   border-top: 3px dotted var(--tertiary);
   border-bottom: 3px dotted var(--tertiary);
-  
+  background-color: transparent;
   margin-top: 0;
   padding-bottom: 22px;
  
@@ -110,7 +112,6 @@ header h1{
   padding: 35px 15px;
   text-shadow: -2px 2px 1px var(--tertiary);
   margin: 35px 180px 35px 0;
-  
  }
  
  /* End of Hero Section*/
@@ -130,7 +131,7 @@ main .about-me {
 main p{  
   font-weight: 600;
   letter-spacing: 0 !important;
-  font-size: 0.85rem !important;
+  font-size: 0.80rem !important;
   font-family: var(--paragraph-coding-mono-font);
 }
 
@@ -152,6 +153,7 @@ main a:hover{
 main h2{  
   text-shadow: 1px 1px 1px var(--white) !important;
   letter-spacing: 2px !important;
+  margin: 0 0 18px 0;  
 }
 
 main h4{
@@ -201,7 +203,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.55rem;
+  font-size: 2.60rem;
   letter-spacing: 1px !important;
 }
 
@@ -230,17 +232,17 @@ h6 {
   margin-top: 0;
 } */
 
-nav {
-  width: 100%;
+ nav {
+  width: 81%;
   justify-content: center;
-  cursor: pointer;
-  padding: 0;
+  /* padding: 0; */
+  padding: 19px 10px 0 0;
   
 }
 
 nav a, span {
-  padding: 6px 10px;
-  margin: 0 15px;
+  /* padding: 19px 10px 0 0; */
+  margin: 0 15px 0 15px;
   transition: all 0.2s;
 
   color: var(--dark) !important;
@@ -262,22 +264,25 @@ nav a:hover, span:hover{
   
 }
 
-.page-title {
+/* .page-title {
   text-align: center;
   width: 100%;
   margin: 0;
-  font-size: 2.5rem;
-}
+  font-size: 2.5rem; 
+}*/
 
 .btn,
 .pill {
   margin: 5px 0;
-  padding: 0.04rem 0.5rem;
+  padding: 0.07rem 0.45rem;
+
   outline: none;
   border-radius: 3px;
   border:  1px solid var(--quatrinary) !important;
+  
   color: var(--dark);
   background-color: var(--secondary);
+
   text-decoration: none;
   transition: all 0.5s;  
 
@@ -378,7 +383,7 @@ nav a:hover, span:hover{
 
 .container img{
   opacity: 95%;
-  margin: 15px 30px 0 0;  
+  /* margin: 15px 30px 0 0;   */
 } 
 
 .worksample-photo {
@@ -452,6 +457,10 @@ footer a{
 
 footer a:hover {
   opacity: 0.80;
+}
+
+footer img{
+  margin: 15px 35px 0 0;  
 }
 
 
@@ -1509,8 +1518,8 @@ footer a:hover {
 }
 
 #hover-me:hover #hover-content img {
-  width: 13%;
-  height: 37%;
+  width: 10%;
+  height: 32%;
   margin-left: 13px;
   padding-top: 15px
 }
@@ -1534,22 +1543,26 @@ footer a:hover {
 @media screen and (max-width: 575px) {  
 
   header h1{
-    font-size: 28px !important;
+    font-size: 26px !important;
+  }
+
+  nav {
+    padding: 5px 10px 0 0;
   }
 
   nav a, span{
-    padding: 3px 4px;
-    margin: 0 4px;
+    padding: 1px 4px !important; 
+    margin: 0 4px !important;
 
-    font-size: 0.8rem !important; 
+    font-size: 0.75rem !important; 
     letter-spacing: 0;
   }
 
   nav a:hover, span:hover{
-    padding: 3px 4px;
-    margin: 0 4px;
+    padding: 3px 4px !important;
+    margin: 0 4px !important;
 
-    font-size: 0.8rem !important; 
+    font-size: 0.75rem !important; 
     letter-spacing: 0;
 
     color: var(--white)!important;
@@ -1675,11 +1688,15 @@ footer a:hover {
     font-size: 38px ;
   }
 
+  nav {
+    padding: 7px 5px 0 0;
+  }
+
   nav a, span{
     padding: 3px 4px ;
     margin: 0 4px ;
 
-    font-size: 1.2rem !important;  
+    font-size: 1.2rem ; 
     letter-spacing: 0 ;
   }
 
@@ -1687,7 +1704,7 @@ footer a:hover {
     padding: 3px 4px ;
     margin: 0 4px ;
 
-    font-size: 1.2rem !important; 
+    font-size: 1.2rem ;
     letter-spacing: 0 ;
 
     color: var(--white);
@@ -1821,11 +1838,16 @@ footer a:hover {
     font-size: 38px ;
   }
 
+  nav {
+    padding: 8px 7px 0 0;
+  }
+
+
   nav a, span{
     padding: 3px 4px ;
     margin: 0 4px ;
 
-    font-size: 1.18rem !important; 
+    font-size: 1.18rem ; 
     letter-spacing: 0 ;
   }
 
@@ -1833,7 +1855,7 @@ footer a:hover {
     padding: 3px 4px ;
     margin: 0 4px ;
 
-    font-size: 1.18rem  !important;  
+    font-size: 1.18rem  ;
     letter-spacing: 0 ;
 
     color: var(--white);

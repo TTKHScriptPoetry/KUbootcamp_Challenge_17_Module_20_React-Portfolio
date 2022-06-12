@@ -27,33 +27,34 @@ class ShowcaseNumOne extends Component{
       // <div className="bg-secondary p-3 mb-0 flex-row  align-center border-top-thin ">
      
           <div className='flex-row justify-space-between justify-center mb-2 text-center'>
-            <div id="hover-me">
-                {/* <span > Hover Me </span> */}
-                <div style={screenOrigin} id="be-gone">
-                  <div className='worksample-photo' >                     
-                    <p>Consuming Server-Side APIs </p>
-                  </div>
+            <span id="hover-me">
+                
+              <div style={screenOrigin} id="be-gone">
+                <div className='worksample-photo' >                     
+                  <p>Consuming Server-Side APIs </p>
                 </div>
-                <div style={screenHovering} id="hover-content" >
-                  <div className='worksample-detail' >
-                    <a href="https://mercuryktgithub.github.io/KUbootcamp_MilestoneAssignments/Challenge_06_Weather_Dashboard" target={'_blank'} 
-                        rel="noreferrer" 
-                        alt="Weather Dashboard" 
-                        title="Go to Weather Dashboard Website"> 
-                        Weather Dashboard 
-                    </a> 
-                   
-                    <br></br>&nbsp;&nbsp;
-                   
-                    <a href="https://github.com/MercuryKTgithub/KUbootcamp_MilestoneAssignments/tree/main/Challenge_06_Weather_Dashboard" target={'_blank'} 
-                        rel="noreferrer"  
-                        alt="Github Repos" 
-                        title="Go to Github Repository">
-                          <img src={myGithub} alt="Github Repos URL" style={{ 'transition': 'all 0.3s'}} />
-                    </a>
-                  </div>
+              </div>
+
+              <div style={screenHovering} id="hover-content" >
+                <div className='worksample-detail' >
+                  <a href="https://mercuryktgithub.github.io/KUbootcamp_MilestoneAssignments/Challenge_06_Weather_Dashboard" target={'_blank'} 
+                      rel="noreferrer" 
+                      alt="Weather Dashboard" 
+                      title="Go to Weather Dashboard Website"> 
+                      Weather Dashboard 
+                  </a> 
+                  <br></br>&nbsp;&nbsp;
+                  <a href="https://github.com/MercuryKTgithub/KUbootcamp_MilestoneAssignments/tree/main/Challenge_06_Weather_Dashboard" target={'_blank'} 
+                      rel="noreferrer"  
+                      alt="Github Repos" 
+                      title="Go to Github Repository">
+                        <img src={myGithub} alt="Github Repos URL" />
+                  </a>
+
                 </div>
-            </div>
+              </div>
+            
+            </span>
           </div>
 
 

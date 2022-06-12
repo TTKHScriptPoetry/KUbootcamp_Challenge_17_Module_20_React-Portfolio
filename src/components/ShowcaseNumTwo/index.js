@@ -12,7 +12,7 @@ class ShowcaseNumTwo extends Component{
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'cover',  
         // backgroundAttachment: 'fixed', 
-        opacity: '0.75',
+        opacity: '0.90',
     };
     const screenHovering={
       backgroundImage: 
@@ -27,33 +27,33 @@ class ShowcaseNumTwo extends Component{
       // <div className="bg-secondary p-3 mb-0 flex-row  align-center border-top-thin ">
      
           <div className='flex-row justify-space-between justify-center mb-2 text-center'>
-            <div id="hover-me">
-                {/* <span > Hover Me </span> */}
-                <div style={screenOrigin} id="be-gone">
-                  <div  style={{ 'width' : 560, 'height' : 310, 'paddingTop': 5, 'textShadow': '1px 1px 1px var(--tertiary)'}} >                      
-                    <p>Model-View-Controller (MVC)</p>
-                  </div>
+            <span id="hover-me">
+                
+              <div style={screenOrigin} id="be-gone">
+                <div className='worksample-photo'>
+                  <p>Model-View-Controller (MVC)</p>
                 </div>
-                <div id="hover-content" style={screenHovering}>
-                  <div style={{ 'width' : 560, 'height' : 310}}>
-                    <br></br><br></br><br></br><br></br> 
-                    <a href="https://kubc-mvc-tech-blog-portal.herokuapp.com" target={'_blank'} 
-                        rel="noreferrer" 
-                        alt="Tech Blog" 
-                        title="Go to Tech Blog Website"> 
-                        Tech Blog
-                    </a> 
-                    <br></br> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://github.com/TTKHScriptPoetry/KUbootcamp_Challenge_12_Module_14_MVC_Tech_Blog" target={'_blank'} 
-                        rel="noreferrer"  
-                        alt="Github Repos" 
-                        title="Go to Github Repository">
-                          <img src={myGithub} alt="Github Repos URL" style={{ 'transition': 'all 0.3s'}} />
-                    </a>
-                  </div>
+              </div>
+              
+              <div id="hover-content" style={screenHovering}>
+                <div className='worksample-detail'>
+                  <a href="https://kubc-mvc-tech-blog-portal.herokuapp.com" target={'_blank'} 
+                      rel="noreferrer" 
+                      alt="Tech Blog" 
+                      title="Go to Tech Blog Website"> 
+                      Tech Blog
+                  </a> 
+                  <br></br>&nbsp;&nbsp;
+                  <a href="https://github.com/TTKHScriptPoetry/KUbootcamp_Challenge_12_Module_14_MVC_Tech_Blog" target={'_blank'} 
+                      rel="noreferrer"  
+                      alt="Github Repos" 
+                      title="Go to Github Repository">
+                        <img src={myGithub} alt="Github Repos URL" />
+                  </a>
                 </div>
-            </div>
+              </div>
+
+            </span>
           </div>
 
 

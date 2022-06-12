@@ -11,7 +11,8 @@ const CompositeShowcase  = () => {
         <h2>Portfolio</h2>
         <div className="mb-1 flex-row justify-space-between">
           <ShowcaseNumOne></ShowcaseNumOne>
-          <ShowcaseNumOne></ShowcaseNumOne>
+          <ShowcaseNumTwo></ShowcaseNumTwo>
+         
         </div>
         
         {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-1 mt-4`}>

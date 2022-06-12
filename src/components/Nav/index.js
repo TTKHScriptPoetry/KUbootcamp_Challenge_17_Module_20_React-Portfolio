@@ -14,12 +14,13 @@ function Nav(props) {
   // }, [currentCategory]);
 
   return (
-    <header className="bg-secondary mb-0 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
+    // <header className="mb-2">
+    <header className="mb-1 flex-row align-center">
+      <div className="container flex-row justify-space-between-lg justify-center ">
         <h1 > 
          Kim Huong
         </h1>
-        <nav className="text-center">
+        <nav className="text-right">
             <span className={`${aboutMeSelected && 'navActive'}`} onClick={() => { setContactSelected(false); 
                                                 setResumeSelected(false);
                                                 setAboutMeSelected(true);
