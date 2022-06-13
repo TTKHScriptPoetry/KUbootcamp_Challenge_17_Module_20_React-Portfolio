@@ -34,14 +34,16 @@ class Footer extends Component {
           <div className="container justify-center text-center "> 
             
             <div className="flex-row justify-space-between justify-center ">
-              <a href="https://github.com/TTKHScriptPoetry" target='blank'>
+              <a href="https://github.com/TTKHScriptPoetry" 
+                target='blank' >
                 <img 
                   title={"Click to see my Github repositories"}
                   src={myGithub}
                   alt={"Github repositories"}
                 />
               </a> 
-              <a href="https://github.com/TTKHScriptPoetry" target='blank'>
+              <a href="https://github.com/TTKHScriptPoetry" 
+              target='blank'  >
                 <img 
                   title={"Click for my LinkedIn"}
                   src={myLinkedin}
@@ -50,7 +52,8 @@ class Footer extends Component {
                   height={48}
                 />
               </a> 
-              <a href="https://github.com/TTKHScriptPoetry" target='blank'>
+              <a href="https://github.com/TTKHScriptPoetry" 
+              target='blank'  >
                 {/* <img style={{ 'marginTop' : '14px', 'marginLeft' : '-4px'}} */}
                 <img  
                   title={"Connect with me on Facebook"}

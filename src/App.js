@@ -2,16 +2,15 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 // import Portfolio from './components/Portfolio';
-import ContactFrom from './components/Contact'; 
+// import ContactFrom from './components/Contact'; 
 import Resume from './components/Resume';
-import Work from './components/Work';
+// import Work from './components/Work';
 import Hero from './components/Hero';
 
 // import Header from './components/Header';
 import Footer from './components/Footer';
-import SingularShow from './components/SingularShow';
 import CompositeShowcase from './components/CompositeShowcase';
-import ShowcaseNumOne from './components/ShowcaseNumOne';
+import ContactMe from './components/ContactMe';
 
 function App() {
   // const [categories] = useState([
@@ -28,7 +27,7 @@ function App() {
   
   if(contactSelected) {
     return(
-      <div className="min-100-vh"> 
+      <div className="flex-column justify-flex-start min-100-vh">
         <Nav
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
@@ -45,7 +44,7 @@ function App() {
      
         <Hero></Hero>
         <main className="container">        
-          <ContactFrom></ContactFrom>
+          <ContactMe></ContactMe>
         </main>
         <Footer></Footer>  
       </div>

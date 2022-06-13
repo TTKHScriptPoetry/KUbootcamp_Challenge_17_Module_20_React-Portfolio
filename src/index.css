@@ -21,8 +21,9 @@
   --white: rgb(255, 255, 255);
   --petal-theme-color: rgb(219, 112, 121);
   --emphasis-catchy: rgba(70, 83, 143, 0.980);
+  --err-msg: pink;
 
- --border-radius: 0.3rem;
+ --border-radius: 0.31rem;
  --spacing-one: calc(1rem * 0.25);
  --spacing-two: calc(1rem * 0.5);
  --spacing-three: 1rem;
@@ -116,64 +117,7 @@ header h1{
  }
  
  /* End of Hero Section*/
- 
-/* 
-main .profile-photo {
-  width: 157px ;
-  height: 220px;
-  opacity: 65%;
-}
 
-main .about-me {
-  font-size: 0.7rem !important;
-  font-weight: 500;
-}
-
-main p{  
-  font-weight: 600;
-  letter-spacing: 0 !important;
-  font-size: 0.80rem !important;
-  font-family: var(--paragraph-coding-mono-font);
-}
-
-
-main a {
-  color: var(--dark);
-  font-size: 1.1rem !important;
-  text-decoration: none;
-}
-
-main a:hover{
-  color: var(--white);
-  font-size: 1.1rem !important;
-  text-shadow: 1px 1px 1px var(--emphasis-list-item-color) !important;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-main h2{  
-  text-shadow: 1px 1px 1px var(--white) !important;
-  letter-spacing: 2px !important;
-  margin: 0 0 18px 0;  
-}
-
-main h4{
-  font-size: 1.4rem !important;
-  color: var(--primary);
-  text-shadow: 1px 1px 1px var(--white) !important;
-}
- */
-
-
-textarea:focus, input:focus{
-  outline: none;
-  font-weight: 300;
-  color: var(--input-focus);
-}
-
-textarea, input{
-  color: var(--input-focus);
-}
 
 h1,
 h2,
@@ -309,7 +253,7 @@ main .about-me {
 }
 
 main p{  
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0 !important;
   font-size: 0.80rem !important;
   font-family: var(--paragraph-coding-mono-font);
@@ -348,14 +292,13 @@ main h4{
   
 }
 
-.btn,
 .pill {
   margin: 5px 0;
   padding: 0.07rem 0.45rem;
 
   outline: none;
   border-radius: 3px;
-  border:  1px solid var(--quatrinary) !important;
+  border:  1px solid var(--dark) !important;
   
   color: var(--dark);
   background-color: var(--secondary);
@@ -366,15 +309,39 @@ main h4{
 } 
 
 .btn{
-  font-family: var(--designer-font-primary);
-  border: 2px solid var(--dark) !important;
-}
+  margin: 0.87rem 0;
+  padding: 0.37rem 0.85rem;
+  width: 35%;
+
+  outline: none;
+  border-radius: var(--border-radius);
+  border:  1px solid var(--super-light) !important;
+
+  color: var(--secondary);
+  background-color: var(--dark);
+
+  text-decoration: none;
+  transition: all 0.5s;  
+
+  font-family: var(--paragraph-coding-mono-font);
+  font-size: 1.0rem;
+  font-weight: 500;
+
+} 
 
 .btn:hover
 {
-  color: var(--secondary);
-  background-color: var(--dark);
-  font-family: var(--designer-font-primary);
+  /* color: var(--secondary);
+  background-color: var(--dark); */
+  border:  1px solid var(--super-light) !important;
+
+  color: var(--dark);
+  background-color: var(--secondary);
+
+  font-family: var(--paragraph-coding-mono-font);
+  font-size: 1.0rem;
+  font-weight: 500;
+ 
 }
  
 .pill:hover {
@@ -395,37 +362,65 @@ main h4{
 .form-input,
 .form-textarea {
   display: block;
-  font-family: var(--casual-technical-font);
+  font-family: var(--paragraph-coding-mono-font);
 }
 
-/* .form-textarea {
-  height: 120px;
-} */
+.form-label {
+  font-size: 0.95rem;
+  /* margin: 0.925rem 0 0.425rem 0.25rem; */
+  margin: 0.97rem 0  0.32rem 0 !important;
+
+}
+
+.form-error{
+  color: var(--err-msg);
+  font-size: 0.95rem;
+  
+  padding-top: 0.256rem;
+  border-top: 2px solid var(--err-msg) !important;
+  border-radius: 3px;
+}
 
 .form-textarea {
   width: 100%;
+  height: 150px;
+
   padding: 0.75rem;
   margin: 6px 100px 10px 0 !important;
-  font-size: 1.2rem;
-  border: 2px solid var(--dark);
+ 
+  border: 1px solid var(--quatrinary);
   border-radius: var(--border-radius);
+
+  color: var(--emphasis-list-item-color);
+  font-family: var(--title-flower-theme-font);
+  font-size: 1.0rem;
   font-weight: 500;
-  height: 120px;
 } 
 
 .form-input {
   width: 100%;
+
   padding: 0.75rem;
   margin: 0.2rem 30px 0.2rem 0;
-  font-size: 1.2rem;
-  border: 2px solid var(--dark);
-  border-radius: var(--border-radius);
-  font-weight: 500;
-} 
 
-.form-label {
-  font-size: 1.2rem;
-  margin: 0.625rem 0 0.25rem;
+  border: 1px solid var(--quatrinary);
+  border-radius: var(--border-radius);
+
+  color: var(--emphasis-list-item-color);
+  font-family: var(--title-flower-theme-font);
+  font-size: 1.0rem;
+  font-weight: 500;
+ 
+} 
+ 
+textarea:focus, input:focus{
+  outline: none;
+  font-weight: 300;
+  color: var(--emphasis-list-item-color);
+}
+
+textarea, input{
+  color: var(--emphasis-list-item-color);
 }
 
 
@@ -528,10 +523,17 @@ footer a:hover {
   opacity: 0.80;
 }
 
+footer a:link {
+  outline: none !important;
+}
+
+footer a:visited {
+  outline: none !important;
+}
+
 footer img{
   margin: 15px 35px 0 0;  
 }
-
 
 
 /* DISPLAY */
