@@ -4,22 +4,32 @@ import { validateEmail } from '../../utils/helpers';
 import emailjs from "emailjs-com";
 
 function ContactMe() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const { name, email, message } = formState; //the property names of formState -- destructure the formState object into its named properties
-  const [errorMessage, setErrorMessage] = useState(''); // initial state of the errorMessage is an empty string
-
-  const INVALID_EMAIL_MSG = "Your email is invalid!";
+  const INVALID_EMAIL_MSG = "Your email is either blank or invalid!";
   const NAME_REQUIRED_MSG = "Your name is required!";
   const MSG_CONTENT_REQUIRED = "Your message is required!";
+  const MSG_SENT = "Message sent!";
   const SPACE = " ";
-  const STRING_EMPTY = "";
+  const STRING_EMPTY = '';
 
+  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  // const { name, email, message } = formState; //the property names of formState -- destructure the formState object into its named properties
+  const [errorMessage, setErrorMessage] = useState(''); // initial state of the errorMessage is an empty string
+  const [sentEmailMessage, setSentEmailMessage] = useState('');
+
+  const [nameUntouched, setNameUntouched] = useState(0);
+  const [emailUntouched, setEmailUntouched] = useState(0);
+  const [contentMsgUntouched, setContentMsgUntouched] = useState(0);
    // -- Add validation in the handleChange function, allowing validation of the form data before syncing the form data with the state, formState
   function handleChange(e) {   
+    console.log(sentEmailMessage);
+    console.log("ssssssssssssssssssssssss");
+    setSentEmailMessage('');
     if (e.target.name === 'email') {
+      setEmailUntouched(emailUntouched + 1);
       const isValid = validateEmail(e.target.value);
       console.log(isValid);      
       if (!isValid) {
+       
         if(errorMessage.includes(INVALID_EMAIL_MSG)){
           console.log("repeated err email msg");
           let currentMsg = errorMessage.replaceAll(INVALID_EMAIL_MSG, STRING_EMPTY);
@@ -39,10 +49,12 @@ function ContactMe() {
       }
     } 
     else if (e.target.name === 'name') {
+      setNameUntouched(nameUntouched + 1);
       const isValid = (e.target.value === STRING_EMPTY) ? false : true;
       console.log(isValid);   
       console.log("nnnnnnnnnnnnnnnnn");      
       if (!isValid) {
+       
         if(errorMessage.includes(NAME_REQUIRED_MSG)){
           console.log("repeated name err msg");
           let currentMsg = errorMessage.replaceAll(NAME_REQUIRED_MSG, STRING_EMPTY);
@@ -62,10 +74,12 @@ function ContactMe() {
          
     }
     else {
+      setContentMsgUntouched(contentMsgUntouched + 1);
       const isValid = (e.target.value === STRING_EMPTY) ? false : true;
       console.log(isValid);   
       console.log("cccccccccccccccccccccc");      
       if (!isValid) {
+         
         if(errorMessage.includes(MSG_CONTENT_REQUIRED)){
           console.log("repeated content err mgs");
           let currentMsg = errorMessage.replaceAll(MSG_CONTENT_REQUIRED, STRING_EMPTY);
@@ -84,10 +98,7 @@ function ContactMe() {
       }
       
     }
-    // console.log('errorMessage', errorMessage);
-    // -- The name property of target e = name attribute of the form's input element
-    // Only allows the state to update with the user input if there is no error message
-
+     
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
@@ -98,19 +109,36 @@ function ContactMe() {
 
   function sendEmail(e){
     e.preventDefault();
-
-    if (!errorMessage) {
+    console.log(nameUntouched, emailUntouched, contentMsgUntouched);
+    if (sentEmailMessage.includes(MSG_SENT)){
+      console.log("OK, it's inside");
+      setSentEmailMessage('');
+      console.log("Clear. No msg sent");
+      return;
+    }
+    console.log(errorMessage);
+    if ((!errorMessage) && (nameUntouched >= 1) && (emailUntouched >= 1) && (contentMsgUntouched >= 1)) {
       emailjs.sendForm('service_k7pqbuq', 'template_dovyd3m', e.target, 'Y24TbjWB9BcHeTlMP')
       .then((result) => {
-          setErrorMessage("Message sent!");
-          // console.log(result.text);
+          setNameUntouched(0);
+          setSentEmailMessage(MSG_SENT);
+          
+          console.log(result.text);
+          // setErrorMessage('');
           // console.log("mmmmmmmmmmmmmmmmmmm");
-      }, (error) => {          
+      }, (error) => {         
+          // setNameUntouched(0); 
           setErrorMessage("An error occurred. Your message was not successfully sent."); 
-          // console.log(error.text);  
+          
+          console.log(error.text);  
           // console.log("eeeeeeeeeeeeeeeeeee");
       });
       e.target.reset();
+      setNameUntouched(0);
+      setEmailUntouched(0);
+      setContentMsgUntouched(0);
+      setErrorMessage('');
+      // setSentEmailMessage('');
     }
      
   }
@@ -124,25 +152,22 @@ function ContactMe() {
               <div>
                 <label htmlFor="name" className="form-label">Name:</label>
                 
-                <input type="text" name="name"  onBlur={handleChange}  defaultValue={name} autoComplete="off" className="form-input" />
+                {/* <input type="text" name="name"  onBlur={handleChange}  defaultValue={name} autoComplete="off" className="form-input" /> */}
+                <input type="text" name="name"  onBlur={handleChange}   autoComplete="off" className="form-input" />
               </div>
 
               <div>
                 <label htmlFor="email" className="form-label">Email address:</label>
-                <input type="email" name="email" onBlur={handleChange} defaultValue={email} autoComplete="off" className="form-input"/>
+                {/* <input type="email" name="email" onBlur={handleChange} defaultValue={email} autoComplete="off" className="form-input"/> */}
+                <input type="email" name="email" onBlur={handleChange} autoComplete="off" className="form-input"/>
               </div>
 
               <div>
                 <label htmlFor="message" className="form-label">Message:</label>
-                <textarea name="message" rows="6" onBlur={handleChange} defaultValue={message} className="form-textarea"/>
+                {/* <textarea name="message" rows="6" onBlur={handleChange} defaultValue={message} className="form-textarea"/> */}
+                <textarea name="message" rows="6" onBlur={handleChange} className="form-textarea"/>
               
               </div>
-              
-              {/* {errorMessage && (
-                <div className='form-error'>
-                  <p>{errorMessage} &nbsp;</p>
-                </div>
-              )} */}
                
                 <button type="submit" className="btn">Send Message</button>
                
@@ -150,6 +175,12 @@ function ContactMe() {
                 {errorMessage && (
                   <div className='form-error'>
                     <p>{errorMessage} </p>
+                  </div>
+                )}
+
+                {sentEmailMessage && (
+                  <div className='form-error'>
+                    <p>{sentEmailMessage} </p>
                   </div>
                 )}
               

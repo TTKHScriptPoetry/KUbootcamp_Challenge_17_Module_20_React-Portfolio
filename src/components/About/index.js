@@ -1,6 +1,6 @@
 import React from 'react'
 import formalPhoto from "../../assets/images/KimHuongFormal.jpg";
-
+ 
 function About() {
 
   return (
@@ -8,18 +8,14 @@ function About() {
     
       <div className={`col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}>
         <h2>About Me</h2>
-        {/* <span className="pill mb-2"><a title='Click to Download' href={require(`../../assets/docs/SoftwareDeveloper_KimberlyTran_Resume.pdf`)} >My Resume</a></span> */}
-        <img src={formalPhoto} alt="Kim Huong Tran" className='profile-photo border-photo-small' />
+        <img src={formalPhoto} alt="Kim Huong" className='profile-photo border-photo-thin' title="Hi! My name is Kim Huong" />
 
-        <p className="about-me mb-1" >  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-              itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-              
-              Self-taught and .net trained software developer with accumulated 6-7 years of hand-on experiences that cover at least 4 areas 
-              of Microsoft training objectives: Creating User Services, Consuming & Manipulating Data, Testing & Debugging, Configuring & Securing 
-              Window plus Web based applications. <br/><br/>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-              itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-              itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat! </p>
+        <p className="about-me mb-1" >  The last thing people want to do is to visit the About Me section of someone's website to read about that someone's info, as they think the info is most likely about that someone's bragging on himself/herself. Please do not get the wrong impression here. Rather, it's simply informative: like many others who took online school during the pandemics, I went for a Fullstack Coding Bootcamp program by KU (the Univerity of Kansas) and just happen to have finished it recently. 
+        </p>
+        <p className="about-me mb-1">  
+        As someone who had web programming background in Microsoft .Net environment, taking the bootcamp training was not much of a challenge; it's more like going through a process of renewal and realization. It's like re-encoutering an old book, but full of tricks and insights this time around in its newest edition, as far as the front-end programming in HTML, CSS, Javascript, and JQuery is concerned. 
+        I'm here to re-iterating the remaining skillset that the Bootcamps has offered me through the online exhibition of my work during its training as a self-reflection. The focus of my portfolio is on MERN stack, at the minimum relevance, all projects were based off of Node.js/Express.js Visual Code IDE environment.
+        </p>
       
       <p>&nbsp;</p>
       </div>
