@@ -7,6 +7,7 @@ import ShowcaseNumFour from '../ShowcaseNumFour';
 import ShowcaseNumFive from '../ShowcaseNumFive';
 import ShowcaseNumSix from '../ShowcaseNumSix';
 import ShowcaseNumSeven from '../ShowcaseNumSeven';
+import ShowcaseNumEight from '../ShowcaseNumEight';
 
 const CompositeShowcase  = () => {
   return (
@@ -20,6 +21,7 @@ const CompositeShowcase  = () => {
           <ShowcaseNumFour></ShowcaseNumFour>
           <ShowcaseNumFive></ShowcaseNumFive>
           <ShowcaseNumSix></ShowcaseNumSix>
+          <ShowcaseNumEight></ShowcaseNumEight>
           <ShowcaseNumSeven></ShowcaseNumSeven>
         </div>
         
