@@ -112,18 +112,7 @@ function ContactMe() {
       });
       e.target.reset();
     }
-    // // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_PUBLIC_KEY')
-    // emailjs.sendForm('service_k7pqbuq', 'template_dovyd3m', e.target, 'Y24TbjWB9BcHeTlMP')
-    //   .then((result) => {
-    //       setErrorMessage("Message sent!");
-    //       // console.log(result.text);
-    //       // console.log("mmmmmmmmmmmmmmmmmmm");
-    //   }, (error) => {          
-    //       setErrorMessage("An error occurred. Your message was not successfully sent."); 
-    //       // console.log(error.text);  
-    //       // console.log("eeeeeeeeeeeeeeeeeee");
-    //   });
-    //   e.target.reset();
+     
   }
 
   return (
@@ -135,12 +124,12 @@ function ContactMe() {
               <div>
                 <label htmlFor="name" className="form-label">Name:</label>
                 
-                <input type="text" name="name"  onBlur={handleChange}  defaultValue={name}   className="form-input" />
+                <input type="text" name="name"  onBlur={handleChange}  defaultValue={name} autoComplete="off" className="form-input" />
               </div>
 
               <div>
                 <label htmlFor="email" className="form-label">Email address:</label>
-                <input type="email" name="email" onBlur={handleChange} defaultValue={email} className="form-input"/>
+                <input type="email" name="email" onBlur={handleChange} defaultValue={email} autoComplete="off" className="form-input"/>
               </div>
 
               <div>

@@ -369,7 +369,7 @@ main h4{
 .form-label {
   font-size: 0.95rem;
   /* margin: 0.925rem 0 0.425rem 0.25rem; */
-  margin: 0.97rem 0  0.32rem 0 !important;
+  margin: 0.97rem 0 0.32rem 0 !important;
 
 }
 
@@ -386,7 +386,7 @@ main h4{
   width: 100%;
   height: 150px;
 
-  padding: 0.75rem;
+  padding: 0.55rem;
   margin: 6px 100px 10px 0 !important;
  
   border: 1px solid var(--quatrinary);
@@ -1599,7 +1599,7 @@ footer img{
   transition: all 0.6s;
 }
 
-/* |||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* |||||||||||||||||||||||| Iphone 12 Pro ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* (1) */
 @media screen and (max-width: 575px) {  
   header{
@@ -1756,6 +1756,31 @@ footer img{
     height: 29% !important;
     margin-left: 13px !important;
   }
+
+  .form-label {
+    font-size: 0.68rem !important;
+    margin: 0.67rem 0 0.12rem 0 !important;
+  }
+
+  .form-error {
+    font-size: 0.68rem !important;
+    border-top: 2px solid var(--err-msg) !important;
+    border-radius: 3px !important;
+  }
+
+  .form-textarea, .form-input {
+    padding: 0.45rem !important;
+    font-size: 0.70rem !important;     
+  } 
+
+  .btn, .btn:hover {
+    margin: 0.65rem 0 !important;
+    padding: 0.32rem 0.65rem !important;
+    width: 56% !important;
+  
+    font-size: 0.70rem !important;
+  } 
+
 
 }
 
@@ -1924,6 +1949,30 @@ footer img{
     margin-left: 13px ;
   }
 
+  .form-label {
+    font-size: 0.82rem ;
+    margin: 0.67rem 0 0.12rem 0 ;
+  }
+
+  .form-error {
+    font-size: 0.80rem ;
+    border-top: 2px solid var(--err-msg) ;
+    border-radius: 3px;
+  }
+
+  .form-textarea, .form-input {
+    padding: 0.45rem ;
+    font-size: 0.82rem ;     
+  } 
+
+  .btn, .btn:hover{
+    margin: 0.65rem 0;
+    padding: 0.32rem 0.65rem ;
+    width: 57%;
+  
+    font-size: 0.82rem ;
+  } 
+  
 }
 
 /* |||||||||||||||||||||||||||||Surface Pro 7|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
@@ -2092,6 +2141,30 @@ footer img{
     height: 30% ;
     margin-left: 13px ;
   }
+
+  .form-label {
+    font-size: 0.86rem ;
+    margin: 0.67rem 0 0.12rem 0 ;
+  }
+
+  .form-error {
+    font-size: 0.82rem ;
+    border-top: 2px solid var(--err-msg) ;
+    border-radius: 3px;
+  }
+
+  .form-textarea, .form-input {
+    padding: 0.45rem ;
+    font-size: 0.82rem ;     
+  } 
+
+  .btn, .btn:hover{
+    margin: 0.65rem 0;
+    padding: 0.32rem 0.65rem ;
+    width: 59%;
+  
+    font-size: 0.86rem ;
+  } 
 
 }
 
