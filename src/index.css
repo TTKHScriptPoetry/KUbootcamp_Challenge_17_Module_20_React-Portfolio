@@ -251,14 +251,14 @@ main .profile-photo {
 }
 
 main .about-me {
-  font-size: 0.7rem !important;
-  font-weight: 500;
+  font-size: 0.68rem !important;
+  font-weight: 400;
 }
 
 main p{  
   font-weight: 500;
   letter-spacing: 0 !important;
-  font-size: 0.83rem !important;
+  font-size: 0.82rem !important;
   font-family: var(--paragraph-coding-mono-font);
 }
 
@@ -381,7 +381,7 @@ main h4{
 
 .form-error{
   color: var(--err-msg);
-  font-size: 0.95rem;
+  font-size: 0.81rem !important;
   
   padding-top: 0.256rem;
   border-top: 2px solid var(--err-msg) !important;

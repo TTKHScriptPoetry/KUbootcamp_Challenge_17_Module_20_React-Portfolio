@@ -11,10 +11,10 @@ function ContactMe() {
   const SPACE = " ";
   const STRING_EMPTY = '';
 
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const [formState, setFormState] = useState({ name: STRING_EMPTY, email: STRING_EMPTY, message: STRING_EMPTY });
   // const { name, email, message } = formState; //the property names of formState -- destructure the formState object into its named properties
-  const [errorMessage, setErrorMessage] = useState(''); // initial state of the errorMessage is an empty string
-  const [sentEmailMessage, setSentEmailMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState(STRING_EMPTY); // initial state of the errorMessage is an empty string
+  const [sentEmailMessage, setSentEmailMessage] = useState(STRING_EMPTY);
 
   const [nameUntouched, setNameUntouched] = useState(0);
   const [emailUntouched, setEmailUntouched] = useState(0);
@@ -23,7 +23,7 @@ function ContactMe() {
   function handleChange(e) {   
     console.log(sentEmailMessage);
     console.log("ssssssssssssssssssssssss");
-    setSentEmailMessage('');
+    setSentEmailMessage(STRING_EMPTY);
     if (e.target.name === 'email') {
       setEmailUntouched(emailUntouched + 1);
       const isValid = validateEmail(e.target.value);
@@ -34,10 +34,12 @@ function ContactMe() {
           console.log("repeated err email msg");
           let currentMsg = errorMessage.replaceAll(INVALID_EMAIL_MSG, STRING_EMPTY);
           // console.log(currentMsg.trim());
-          setErrorMessage(currentMsg.trim() + SPACE + INVALID_EMAIL_MSG + SPACE);
+          setErrorMessage(currentMsg.trim() +  SPACE + INVALID_EMAIL_MSG + SPACE );
+          console.log(errorMessage);
         }
         else{
-          setErrorMessage( errorMessage + SPACE + INVALID_EMAIL_MSG + SPACE);
+          setErrorMessage( errorMessage +  SPACE + INVALID_EMAIL_MSG + SPACE  );
+          console.log(errorMessage);
         }
         
       } else {
@@ -59,10 +61,12 @@ function ContactMe() {
           console.log("repeated name err msg");
           let currentMsg = errorMessage.replaceAll(NAME_REQUIRED_MSG, STRING_EMPTY);
           // console.log(currentMsg.trim());
-          setErrorMessage(currentMsg.trim() + SPACE + NAME_REQUIRED_MSG + SPACE);
+          setErrorMessage(currentMsg.trim() +  SPACE + NAME_REQUIRED_MSG + SPACE );
+          console.log(errorMessage);
         }
         else{
-          setErrorMessage( errorMessage + SPACE + NAME_REQUIRED_MSG + SPACE);
+          setErrorMessage( errorMessage +  SPACE + NAME_REQUIRED_MSG + SPACE  );
+          console.log(errorMessage);
         }
        
       } else {
@@ -84,10 +88,12 @@ function ContactMe() {
           console.log("repeated content err mgs");
           let currentMsg = errorMessage.replaceAll(MSG_CONTENT_REQUIRED, STRING_EMPTY);
           // console.log(currentMsg.trim());
-          setErrorMessage(currentMsg.trim() + SPACE + MSG_CONTENT_REQUIRED + SPACE);
+          setErrorMessage(currentMsg.trim() +  SPACE + MSG_CONTENT_REQUIRED + SPACE  );
+          console.log(errorMessage);
         }
         else{
-          setErrorMessage( errorMessage + SPACE + MSG_CONTENT_REQUIRED + SPACE);
+          setErrorMessage( errorMessage +  SPACE + MSG_CONTENT_REQUIRED + SPACE  );
+          console.log(errorMessage);
         }
         
       } else {
@@ -112,7 +118,7 @@ function ContactMe() {
     console.log(nameUntouched, emailUntouched, contentMsgUntouched);
     if (sentEmailMessage.includes(MSG_SENT)){
       console.log("OK, it's inside");
-      setSentEmailMessage('');
+      setSentEmailMessage(STRING_EMPTY);
       console.log("Clear. No msg sent");
       return;
     }
@@ -124,7 +130,7 @@ function ContactMe() {
           setSentEmailMessage(MSG_SENT);
           
           console.log(result.text);
-          // setErrorMessage('');
+          // setErrorMessage(STRING_EMPTY);
           // console.log("mmmmmmmmmmmmmmmmmmm");
       }, (error) => {         
           // setNameUntouched(0); 
@@ -137,8 +143,8 @@ function ContactMe() {
       setNameUntouched(0);
       setEmailUntouched(0);
       setContentMsgUntouched(0);
-      setErrorMessage('');
-      // setSentEmailMessage('');
+      setErrorMessage(STRING_EMPTY);
+      // setSentEmailMessage(STRING_EMPTY);
     }
      
   }
@@ -166,21 +172,21 @@ function ContactMe() {
                 <label htmlFor="message" className="form-label">Message:</label>
                 {/* <textarea name="message" rows="6" onBlur={handleChange} defaultValue={message} className="form-textarea"/> */}
                 <textarea name="message" rows="6" onBlur={handleChange} className="form-textarea"/>
-              
               </div>
                
                 <button type="submit" className="btn">Send Message</button>
                
               
                 {errorMessage && (
-                  <div className='form-error'>
-                    <p>{errorMessage} </p>
-                  </div>
+                  <p className='form-error'>
+                   {errorMessage} 
+                  </p>
                 )}
 
                 {sentEmailMessage && (
                   <div className='form-error'>
                     <p>{sentEmailMessage} </p>
+                  
                   </div>
                 )}
               
