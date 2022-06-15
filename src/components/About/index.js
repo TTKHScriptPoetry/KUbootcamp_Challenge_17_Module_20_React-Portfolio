@@ -11,8 +11,8 @@ function About() {
         <h2>About Me</h2>
         <img src={formalPhoto} alt="Kim Huong" className='profile-photo border-photo-thin' title="Hi! My name is Kim Huong" />
         <p>&nbsp;</p>
-        <p className="about-me mb-1" > The last thing I want to do is to create this About Me section of myself and hope to gain people's attention and understanding about who I am. People could care less, so could I because I don't like to visit About Me section of someone else's website either as most likely that someone would just be bragging on himself/herself. 
-        But if people like a certain type of person, they believe whatever that person says no matter what. Look and voice can be very deceiving.
+        <p className="about-me mb-1" > 
+         I only created this About Me section because it's one of the requirements of my course's work: React Portfolio Challenge. I don't like to talk about myself. I let my work speak for itself.
         </p>
         <p>&nbsp;</p>
         <p className="about-me mb-1" >
