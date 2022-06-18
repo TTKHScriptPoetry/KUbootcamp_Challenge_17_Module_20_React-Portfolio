@@ -539,7 +539,7 @@ footer a:visited {
 }
 
 footer img{
-  margin: 15px 35px 0 0;  
+  margin: 15px 38px 0 0;  
 }
 
 
@@ -1676,7 +1676,7 @@ footer img{
     
    }
 
-    /***** Start of main - media query ******/
+  /***** Start of main - media query ******/
   main span{
     margin: 0 0 6px 1px !important;
   }    
@@ -1694,17 +1694,18 @@ footer img{
   main p{  
     letter-spacing: 0 !important;
     font-size: 0.65rem !important;
-    padding: 0;
+    padding: 0 8px !important;
   }
 
   main a {    
     font-size: 0.85rem !important;
-    text-decoration: none;
+    padding: 5px 8px 0 8px !important;
   }
   
   main a:hover{
     font-size: 0.85rem !important;
     text-decoration: none;
+    padding: 5px 8px 0 8px !important;
   }
    
 
@@ -1719,6 +1720,17 @@ footer img{
     color: var(--primary);
     text-shadow: 1px 1px 1px var(--white) !important;
 
+  }
+
+  footer{
+    margin: 0;
+    padding: 0;
+  }
+
+  footer img{
+    width: 31px !important;
+    height: 31px !important;
+    margin: 11px 22px 0 0 !important;
   }
  
   /***** End of main - media query ******/
@@ -1860,7 +1872,7 @@ footer img{
     
    }
 
-    /***** Start of main - media query ******/
+  /***** Start of main - media query ******/
   main span{
     margin: 0 0 9px 1px;
   }    
@@ -1911,6 +1923,17 @@ footer img{
     color: var(--primary);
     text-shadow: 1px 1px 1px var(--white) ;
 
+  }
+
+  footer{
+    margin: 0;
+    padding: 0;
+  }
+
+  footer img{
+    width: 36px ;
+    height: 36px t;
+    margin: 15px 27px 0 0;
   }
  
   /***** End of main - media query ******/
@@ -2053,7 +2076,7 @@ footer img{
     
    }
 
-    /***** Start of main - media query ******/
+  /***** Start of main - media query ******/
   main span{
     margin: 0 0 12px 1px;
   }    
@@ -2082,13 +2105,13 @@ footer img{
   }
 
   main a {    
-    font-size: 0.90rem ;
+    font-size: 0.86rem ;
     text-decoration: none;
      
   }
   
   main a:hover{
-    font-size: 0.90rem ;
+    font-size: 0.86rem ;
     text-decoration: none;
   }
    
@@ -2104,6 +2127,17 @@ footer img{
     color: var(--primary);
     text-shadow: 1px 1px 1px var(--white) ;
 
+  }
+
+  footer{
+    margin: 0;
+    padding: 0;
+  }
+
+  footer img{
+    width: 36px  ;
+    height: 36px  ;
+    margin: 15px 31px 0 0;
   }
  
   /***** End of main - media query ******/

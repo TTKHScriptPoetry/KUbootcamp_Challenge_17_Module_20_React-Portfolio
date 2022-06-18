@@ -22,7 +22,7 @@ class Footer extends Component {
         //    </div>
         // </div>
 
-        <footer className="w-100 mt-auto bg-secondary p-3 mb-0 flex-row  align-center border-top-thin ">
+        <footer className="w-100 mt-auto bg-secondary p-2 mb-0 flex-row  align-center border-top-thin ">
           {/* <div class="container">
             <div id="hover-me">
                 <span>Hover Me</span>

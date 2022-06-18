@@ -11,8 +11,8 @@ function About() {
         <h2>About Me</h2>
         <img src={formalPhoto} alt="Kim Huong" className='profile-photo border-photo-thin' title="Hi! My name is Kim Huong" />
         <p>&nbsp;</p>
-        <p className="about-me mb-1" > The last thing I want to do is to create this About Me section of myself and hope to gain people's attention and understanding about who I am. People could care less, so could I because I don't like to visit About Me section of someone else's website either as most likely that someone would just be bragging on himself/herself. 
-        But if people like a certain type of person, they believe whatever that person says no matter what. Look and voice can be very deceiving.
+        <p className="about-me mb-1" > The last thing I want to do is to create this About Me section of myself and hope to gain people's attention and understanding about who I am. People couldn't care less, neither could I because I don't like to visit About Me section of someone else's website either as most likely that someone would just be bragging on himself/herself. 
+        But if people like a certain type of person and a certain type of look, they believe whatever that person says no matter what. Look and voice can be very deceiving.
         </p>
         <p>&nbsp;</p>
         <p className="about-me mb-1" >
@@ -20,7 +20,7 @@ function About() {
         </p>
         <p>&nbsp;</p>
         <p className="about-me mb-1">  
-        As someone who had web programming background in Microsoft .Net environment, taking the bootcamp training was not much of a challenge; it's more like going through a familiar process of renewal and realization. It's like re-encoutering an old book, but full of tricks and insights this time around in its newest edition, as far as the front-end programming in HTML, CSS, Javascript, and JQuery is concerned. 
+        As someone who had web programming background in Microsoft .Net environment, taking the bootcamp training was not much of a challenge; it's like re-encoutering an old book, but full of tricks and insights this time around in its newest edition, as far as the front-end programming in HTML, CSS, Javascript, and JQuery is concerned. 
         <br></br><br></br>I'm here to re-iterating the remaining skillset that the Bootcamps has offered me through the online exhibition of my work during its training as a self-reflection. The focus of my portfolio is on MERN stack, at the minimum relevance, all projects were based off of Node.js/Express.js Visual Code IDE environment.
         </p>
       
