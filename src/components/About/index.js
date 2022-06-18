@@ -20,7 +20,7 @@ function About() {
         </p>
         <p>&nbsp;</p>
         <p className="about-me mb-1">  
-        As someone who had web programming background in Microsoft .Net environment, taking the bootcamp training was not much of a challenge; it's more like going through a familiar process of renewal and realization. It's like re-encoutering an old book, but full of tricks and insights this time around in its newest edition, as far as the front-end programming in HTML, CSS, Javascript, and JQuery is concerned. 
+        As someone who had web programming background in Microsoft .Net environment, taking the bootcamp training was not much of a challenge; it's like re-encoutering an old book, but full of tricks and insights this time around in its newest edition, as far as the front-end programming in HTML, CSS, Javascript, and JQuery is concerned. 
         <br></br><br></br>I'm here to re-iterating the remaining skillset that the Bootcamps has offered me through the online exhibition of my work during its training as a self-reflection. The focus of my portfolio is on MERN stack, at the minimum relevance, all projects were based off of Node.js/Express.js Visual Code IDE environment.
         </p>
       
