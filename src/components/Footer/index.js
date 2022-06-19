@@ -42,7 +42,7 @@ class Footer extends Component {
                   alt={"Github repositories"}
                 />
               </a> 
-              <a href="https://github.com/TTKHScriptPoetry" 
+              <a href="https://www.linkedin.com/in/mercurykt/" 
               target='blank'  >
                 <img 
                   title={"Click for my LinkedIn"}
@@ -52,7 +52,7 @@ class Footer extends Component {
                   height={48}
                 />
               </a> 
-              <a href="https://github.com/TTKHScriptPoetry" 
+              <a href="https://www.facebook.com/HuongKT" 
               target='blank'  >
                 {/* <img style={{ 'marginTop' : '14px', 'marginLeft' : '-4px'}} */}
                 <img  

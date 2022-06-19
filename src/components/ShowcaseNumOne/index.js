@@ -7,12 +7,12 @@ class ShowcaseNumOne extends Component{
     
     const screenOrigin={
         backgroundImage: 
-          "url('https://raw.githubusercontent.com/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/develop/src/assets/images/small/portfolio/000.png')",
+          "url('https://raw.githubusercontent.com/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/main/src/assets/images/small/portfolio/000.png')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'cover',  
         // backgroundAttachment: 'fixed', 
-        opacity: '0.80',
+        opacity: '0.90',
     };
     const screenHovering={
       backgroundImage: 
@@ -21,7 +21,7 @@ class ShowcaseNumOne extends Component{
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'cover',  
       // backgroundAttachment: 'fixed', 
-      opacity: '0.90', //shows no rectangular boundary
+      opacity: '0.78', //shows no rectangular boundary
     };
     return (
       // <div className="bg-secondary p-3 mb-0 flex-row  align-center border-top-thin ">

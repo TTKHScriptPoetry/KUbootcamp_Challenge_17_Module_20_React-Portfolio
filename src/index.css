@@ -1573,8 +1573,11 @@ footer img{
 }
 
 #hover-me:hover #hover-content a:hover {
-  color: var(--white);
-  text-shadow: -1px -2px 1px var(--petal-theme-color)  !important;
+  /* color: var(--white);
+  text-shadow: -2px -3px 1px var(--petal-theme-color)  !important; */
+
+  color: var(--petal-theme-color);
+  text-shadow: -2px -2px 1px var(--white)  !important;
 
   font-family: var(--title-flower-theme-font);
   font-weight: 800;
@@ -1653,7 +1656,6 @@ footer img{
     
   }
 
-
   .hero{
     padding-bottom: 2px;
     background-size: cover !important; 
@@ -1667,14 +1669,14 @@ footer img{
     font-size: 12px !important; 
    }
    
-   .hero-greeting h4 {
+  .hero-greeting h4 {
     font-style: normal !important; 
     font-size: 20px !important; 
     padding: 7px 3px !important; 
     text-shadow: -2px 2px 1px var(--tertiary) !important; 
     margin: 7px 36px 7px 0 !important; 
-    
-   }
+  
+  }
 
   /***** Start of main - media query ******/
   main span{
@@ -1707,7 +1709,6 @@ footer img{
     text-decoration: none;
     padding: 5px 8px 0 8px !important;
   }
-   
 
   main h2{  
     text-shadow: 1px 1px 1px var(--white) !important;
@@ -1770,9 +1771,11 @@ footer img{
   }
 
   #hover-me:hover #hover-content img {
-    width: 17% !important;
-    height: 29% !important;
-    margin-left: 13px !important;
+    /* width: 17% !important;
+    height: 29% !important; */
+    width: 24px !important;
+    height: 24px !important;
+    margin-left: 5px !important;
   }
 
   .form-label {
@@ -1863,14 +1866,14 @@ footer img{
     font-size: 13px ; 
    }
    
-   .hero-greeting h4 {
-    font-style: normal ; 
-    font-size: 22px ; 
-    padding: 7px 3px ; 
-    text-shadow: -2px 2px 1px var(--tertiary) ; 
-    margin: 40px 24px 30px 0 ; 
-    
-   }
+  .hero-greeting h4 {
+  font-style: normal ; 
+  font-size: 22px ; 
+  padding: 7px 3px ; 
+  text-shadow: -2px 2px 1px var(--tertiary) ; 
+  margin: 40px 24px 30px 0 ; 
+  
+  }
 
   /***** Start of main - media query ******/
   main span{
@@ -1973,9 +1976,11 @@ footer img{
   }
 
   #hover-me:hover #hover-content img {
-    width: 16% ;
-    height: 32% ;
-    margin-left: 13px ;
+    /* width: 16% ;
+    height: 32% ; */
+    width: 32px !important;
+    height: 32px !important;
+    margin-left: 7px ;
   }
 
   .form-label {
@@ -2020,7 +2025,6 @@ footer img{
   nav {
     padding: 8px 7px 0 0;
   }
-
 
   nav a, span{
     padding: 3px 6px ;
@@ -2177,9 +2181,11 @@ footer img{
   }
 
   #hover-me:hover #hover-content img {
-    width: 14% ;
-    height: 30% ;
-    margin-left: 13px ;
+    /* width: 14% ;
+    height: 30% ; */
+    width: 36px !important;
+    height: 36px !important;
+    margin-left: 6px ;
   }
 
   .form-label {
