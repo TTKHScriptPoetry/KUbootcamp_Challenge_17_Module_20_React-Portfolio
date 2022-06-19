@@ -7,7 +7,7 @@ class ShowcaseNumThree extends Component{
     
     const screenOrigin={
         backgroundImage: 
-          "url('https://raw.githubusercontent.com/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/develop/src/assets/images/small/portfolio/222.png')",
+          "url('https://raw.githubusercontent.com/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/main/src/assets/images/small/portfolio/222.png')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'cover',  
@@ -19,7 +19,7 @@ class ShowcaseNumThree extends Component{
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'cover',  
-      opacity: '0.90', //shows no rectangular boundary
+      opacity: '0.78', //shows no rectangular boundary
     };
     return (
           <span className='flex-row justify-space-between justify-center mb-2 text-center'>
