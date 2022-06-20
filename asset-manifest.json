@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kubootcamp_challenge_17_module_20_react_portfolio/static/css/main.961c8bb7.css",
-    "main.js": "/kubootcamp_challenge_17_module_20_react_portfolio/static/js/main.868d437a.js",
+    "main.css": "/kubootcamp_challenge_17_module_20_react_portfolio/static/css/main.49032970.css",
+    "main.js": "/kubootcamp_challenge_17_module_20_react_portfolio/static/js/main.d21108b4.js",
     "static/js/787.66a0d8d8.chunk.js": "/kubootcamp_challenge_17_module_20_react_portfolio/static/js/787.66a0d8d8.chunk.js",
     "static/media/SoftwareDeveloper_KimberlyTran_Resume.pdf": "/kubootcamp_challenge_17_module_20_react_portfolio/static/media/SoftwareDeveloper_KimberlyTran_Resume.f12eeae72ed8553541d3.pdf",
     "static/media/KimHuongFormal.jpg": "/kubootcamp_challenge_17_module_20_react_portfolio/static/media/KimHuongFormal.fca4d12e41dfd899e128.jpg",
     "static/media/linkedin_alt_48.png": "/kubootcamp_challenge_17_module_20_react_portfolio/static/media/linkedin_alt_48.7d2d34b8d766039bb629.png",
     "index.html": "/kubootcamp_challenge_17_module_20_react_portfolio/index.html",
-    "main.961c8bb7.css.map": "/kubootcamp_challenge_17_module_20_react_portfolio/static/css/main.961c8bb7.css.map",
-    "main.868d437a.js.map": "/kubootcamp_challenge_17_module_20_react_portfolio/static/js/main.868d437a.js.map",
+    "main.49032970.css.map": "/kubootcamp_challenge_17_module_20_react_portfolio/static/css/main.49032970.css.map",
+    "main.d21108b4.js.map": "/kubootcamp_challenge_17_module_20_react_portfolio/static/js/main.d21108b4.js.map",
     "787.66a0d8d8.chunk.js.map": "/kubootcamp_challenge_17_module_20_react_portfolio/static/js/787.66a0d8d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.961c8bb7.css",
-    "static/js/main.868d437a.js"
+    "static/css/main.49032970.css",
+    "static/js/main.d21108b4.js"
   ]
 }
