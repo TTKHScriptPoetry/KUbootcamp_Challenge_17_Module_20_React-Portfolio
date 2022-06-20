@@ -9,7 +9,7 @@ class ShowcaseNonWebNumOne extends Component{
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'cover',  
-        opacity: '0.90',
+        opacity: '0.95',
     };
     const screenHovering={
       backgroundImage: 

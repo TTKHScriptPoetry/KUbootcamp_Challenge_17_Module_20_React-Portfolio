@@ -19,13 +19,7 @@ const CompositeShowcase  = () => {
     <div className='flex-row justify-space-around pb-3 justify-center ' > 
       <div className={`col-lg-12 col-md-9 col-sm-6  mb-1 mt-4`}>
         <h2>Portfolio</h2>
-        <h4>Terminal Command-Line Based Projects</h4>
-        <div className="mb-1 flex-row justify-space-between">
-          <ShowcaseNonWebNumOne></ShowcaseNonWebNumOne>
-          <ShowcaseNonWebNumTwo></ShowcaseNonWebNumTwo>
-          <ShowcaseNonWebNumTwoSecond></ShowcaseNonWebNumTwoSecond>
-          <ShowcaseNonWebNumThree></ShowcaseNonWebNumThree>
-        </div>
+       
         <h4>Web-based Projects</h4>
         <div className="mb-1 flex-row justify-space-between">
           <ShowcaseNumOne></ShowcaseNumOne>
@@ -36,6 +30,13 @@ const CompositeShowcase  = () => {
           <ShowcaseNumSix></ShowcaseNumSix>
           <ShowcaseNumEight></ShowcaseNumEight>
           <ShowcaseNumSeven></ShowcaseNumSeven>
+        </div>
+        <h4>Terminal Command-Line Based Projects</h4>
+        <div className="mb-1 flex-row justify-space-between">
+          <ShowcaseNonWebNumOne></ShowcaseNonWebNumOne>
+          <ShowcaseNonWebNumTwo></ShowcaseNonWebNumTwo>
+          <ShowcaseNonWebNumTwoSecond></ShowcaseNonWebNumTwoSecond>
+          <ShowcaseNonWebNumThree></ShowcaseNonWebNumThree>
         </div>
         
         {/* <div className={`col-6 col-lg-6 col-md-6 col-sm-3 mb-1 mt-4`}>
