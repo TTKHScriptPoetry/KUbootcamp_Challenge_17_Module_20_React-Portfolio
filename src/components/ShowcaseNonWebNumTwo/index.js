@@ -25,7 +25,7 @@ class ShowcaseNonWebNumTwo extends Component{
                 
               <div style={screenOrigin} id="be-gone">
                 <div className='worksample-photo'>
-                  <p>ORM-Based E-commerce Back End</p>
+                  <p>ORM-Based E-commerce Back End - Part I</p>
                 </div>
               </div>
               
@@ -35,14 +35,15 @@ class ShowcaseNonWebNumTwo extends Component{
                       rel="noreferrer" 
                       alt="Sequelize Multi Model Creations with Test-Data Seeding" 
                       title="Click for a Demo"> 
-                      Part 1: Sequelize Multi Model Creations 
+                      Part I:  Sequelize Multi <br></br>Model Creations 
                   </a> 
+                  {/* <br></br>
                   <a href="https://drive.google.com/file/d/1mZ27HMqE21EHbhRmyurjBlZpUvpUZFHn/view" target={'_blank'} 
                       rel="noreferrer" 
                       alt="Perform API GET - POST - PUT - DELETE Requests  in Insomnia" 
                       title="Click for a Demo"> 
-                      Part 2: Perform API GET - POST - PUT - DELETE Requests in Insomnia
-                  </a> 
+                      Part 2: Perform API GET - POST -<br></br>PUT - DELETE Requests in Insomnia
+                  </a>  */}
                   <br></br>
                   <a href="https://github.com/TTKHScriptPoetry/KUbootcamp_Challenge_11_ORM-Based_E-commerce_Back_End" target={'_blank'} 
                       rel="noreferrer"  

@@ -504,7 +504,7 @@ textarea, input{
   opacity: 85%;
   text-align: center;
 
-  padding: 105px 0 0 5px;
+  padding: 105px 0 0 0;
 }
 
 .worksample-detail p{
@@ -1570,8 +1570,8 @@ footer img{
   font-family: var(--title-flower-theme-font) !important;
   font-weight: 700;
 
-  font-size: 0.81rem !important;
-  
+  font-size: 0.76rem !important;
+  padding-right: 5px;
 }
 
 #hover-me:hover #hover-content a:hover {
@@ -1584,7 +1584,7 @@ footer img{
   font-family: var(--title-flower-theme-font);
   font-weight: 800;
 
-  font-size: 0.81rem !important;
+  font-size: 0.76rem !important;
 }
 
 #hover-me:hover #hover-content img {
@@ -1962,7 +1962,7 @@ footer img{
     height: 181px ;
      
     padding: 53px 0 0 15px ;
-     
+    
   }
   
   .worksample-detail p{

@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 import myGithub from '../../assets/images/small/whereto/dark_theme/github_48.png';
  
-class ShowcaseNonWebNumOne extends Component{
+class ShowcaseNonWebNumTwoSecond extends Component{
   render() {
     const screenOrigin={
         backgroundImage: 
-          "url('https://raw.githubusercontent.com/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/main/src/assets/images/small/portfolio/888.png')",
+          "url('https://raw.githubusercontent.com/TTKHScriptPoetry/kubootcamp_challenge_17_module_20_react_portfolio/main/src/assets/images/small/portfolio/999.png')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'cover',  
@@ -25,26 +25,19 @@ class ShowcaseNonWebNumOne extends Component{
                 
               <div style={screenOrigin} id="be-gone">
                 <div className='worksample-photo'>
-                  <p>OOP Node.js Based Team Profile Generator</p>
+                  <p>ORM-Based E-commerce Back End - Part II</p>
                 </div>
               </div>
               
               <div id="hover-content" style={screenHovering}>
                 <div className='worksample-detail'>
-                  <a href="https://drive.google.com/file/d/1uLvsbO8nKvFOZHgVE1b637r-ERPMDg_i/view" target={'_blank'} 
+                  <a href="https://drive.google.com/file/d/1mZ27HMqE21EHbhRmyurjBlZpUvpUZFHn/view" target={'_blank'} 
                       rel="noreferrer" 
-                      alt="OOP Based Team Profile Generator" 
-                      title="Click for a Demo"> 
-                      Clip 1: Unit Testing  
-                  </a> <br></br>
-                  <a href="https://drive.google.com/file/d/1hxsbcYj4ecOQVXScWHgz_Icil3mpiiu9/view" target={'_blank'} 
-                      rel="noreferrer" 
-                      alt="OOP Based Team Profile Generator" 
-                      title="Click for a Demo"> 
-                      Clip 2: Walkthrough All 
+                      alt="Perform API GET - POST - PUT - DELETE Requests  in Insomnia" 
+                      title="Click for a Demo">II :  Insomnia API GET-PUT<br></br>POST-DELETE Requests 
                   </a> 
                   <br></br>
-                  <a href="https://github.com/MercuryKTgithub/KUbootcamp_Challenge_08_Module10_Team_Profile_Generator" target={'_blank'} 
+                  <a href="https://github.com/TTKHScriptPoetry/KUbootcamp_Challenge_11_ORM-Based_E-commerce_Back_End" target={'_blank'} 
                       rel="noreferrer"  
                       alt="Github Repos" 
                       title="Go to Github Repository">
@@ -60,6 +53,4 @@ class ShowcaseNonWebNumOne extends Component{
   };
 
 }
-export default ShowcaseNonWebNumOne;
-
-
+export default ShowcaseNonWebNumTwoSecond;
